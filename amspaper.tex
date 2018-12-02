@@ -137,55 +137,76 @@ with both effects of planetary rotation is a forced-dissipated two-dimensional
 of nonlinear interactions, yet it is fully determined by a handful
 of factors: forcing, dissipation (of both energy and enstrophy) and
 $\beta$-effect. In this idealized setting, it is promising to chart
-different turbulent regimes using a few nondimensional parameters.
+different turbulent regimes using a few nondimensional numbers.
 These turbulent regimes have their correspondence in the real geophysical
 flows, as well as in models with increased complexity. Understanding
 these regimes will be a first step towards a general circulation theory.
 
-Sitting in one corner of the parameter space, the \textit{zonostrphic turbulence} regime
-provides a limiting case for understanding $\beta$-plane turbulence \citep{Sukoriansky2002,Galperin2010}.
-Let the 2d flow be stirred by a spectrally localized forcing at a (high) wavenumber $k_{f}$.
-As illustrated in Fig. \ref{EKE_KE_spectra_illustrate}, 
-almost all the energy will inversely cascade
-to larger scales, and almost all the enstrophy will directly cascade
-to smaller scales, which is a constraint on 2d flows regardless of the $\beta$-effect \citep{Kraichnan1967,Charney1971}.
-The $\beta$-effect introduces the turbulence-wave crossover scale that marks the transition from
+One nondimensional number that is well-known to determine the anisotropy
+of the flow is the ratio between two length scales: the Rhines scale
+and the turbulence-wave crossover scale. The Rhines scale
+may be considered as the jet scale, which in terms of wavenumber is
+\begin{equation}
+    k_{Rh}=(\beta/2U_{rms})^{1/2},\label{eq:Rhines_wavenumber_beta_Urms}
+\end{equation}
+where $U_{rms}$ is the rms velocity of the whole flow \citep{Rhines1975}.
+\footnote{The form and meaning of Rhines scale have been
+under debate since it has been proposed. In some studies, rms velocity
+of the eddies or the meridional wind has been used, while the Rhines scale itself
+has been used as an estimate for either eddy scale, jet scale, or
+the scale where energy gets channeled into jets \citep{Williams1978,Jansen2012,Chai2014,Liu2015,Chemke2015}.
+Here we choose the definition that is consistent with zonostrophic turbulence.}
+The turbulence-wave crossover scale marks the transition from
 isotropic eddies to Rossby waves, which in term of wavenumber is
 \begin{equation}
-    k_{\varepsilon}=\mathcal{\mathcal{C}_{\varepsilon}}\beta^{3/5}\varepsilon^{-1/5},\label{eq:classical_crossover_wavenumber}
+    k_{\varepsilon}=\mathcal{C}_{\varepsilon}\beta^{3/5}\varepsilon^{-1/5},\label{eq:classical_crossover_wavenumber}
 \end{equation}
-where $\varepsilon$ is the upscale energy flux and $\mathcal{\mathcal{C}_{\varepsilon}}$ is a constant of about
-$0.5\sim0.6$ \citep{Vallis1993,Galperin2010,Smith2002}. It is thought that 
-eddies smaller than the crossover scale ($k>k_{\varepsilon}$) are
-only weakly influenced by the $\beta$-effect, therefore behaving as isotropic
-turbulence. The classical energy \textit{inertial range} argument thus applies between
-forcing scale and crossover scale, in which all statistical properties
-are uniquely and universally determined by the wavenumber and upscale energy flux $\varepsilon$
-\citep{Kraichnan1967,Boffetta2012,Vallis2006}. A characteristic for the energy inertial range
-is that the energy spectrum follows
+where $\varepsilon$ is the upscale energy flux and $\mathcal{C}_{\varepsilon}$ is a constant of about
+$0.5\sim0.6$ \citep{Vallis1993,Galperin2010,Smith2002}. It is thought that
+eddies smaller than the crossover scale are only weakly influenced by the 
+$\beta$-effect, therefore behaving as isotropic turbulence, whereas eddies 
+larger than the crossover scale predominately behave as Rossby waves.
+
+Intuitively, the ratio of the two scales
+\begin{equation}
+    Z=k_{\varepsilon}/k_{Rh},\label{eq:zonostrophic_index_def}
+\end{equation}
+determines whether jets form or not, strong or weak, as the larger
+$Z$ is, the larger range of scales of eddies will become Rossby waves, whose
+unique dispersion relation strongly modifies their energy transfer in a way 
+that most of the energy is directed into the zonal modes (a simple explanation 
+is given by \citeauthor{Vallis1993}
+{[}1993{]}; another explanation exploring a new invariant unique for
+Rossby waves is given by \nocite{Balk1991,Balk2005}Balk {[}1991,
+2005{]}, \citeauthor{Nazarenko2009} {[}2009{]}).
+Specifically, \citet{Galperin2010}
+divide $\beta$-plane turbulence into two regimes based on $Z$ -- \textit{zonostrophic}
+regime for $Z\gtrsim2.5$ and \textit{friction-dominated} regime
+for $Z\lesssim1.5$ -- and the transition between them. 
+And $Z$ is coined as the \textit{zonostrophic
+index}. Zonostrophic turbulence gets its name because the flow
+is dominated by strong zonal jets. Whereas in the friction-dominated
+regime, the inverse energy cascade is halted by friction before reaching the 
+crossover scale and thus the flow is close to isotropic turbulence.
+
+Quantitatively, the energy spectra of eddies and zonal flow for the
+zonostrophic turbulence, as 
+illustrated in Fig. \ref{EKE_KE_spectra_illustrate}, further
+explain how the zonostrophic index $Z$ set the anisotropy of the flow. 
+Let the 2d flow be stirred by a spectrally localized forcing at a (high) wavenumber $k_{f}$.
+The eddies keeps the same the energy spectrum as the isotropic turbulence,
+with an energy inverse cascade branch ($k<k_f$) as 
 \begin{equation}
     \mathcal{E}(k)=\mathcal{C_{K}}\varepsilon^{2/3}k^{-5/3}\label{eq:Kolmogorov_Kraichnan_spectrum_energy}
 \end{equation}
-from dimensional analysis, where $\mathcal{C_{K}}$ is the Kolmogorov constant of about $6\sim7$
-\citep{Maltrud1991,Smith1993,Paret1997,Chen2006,Borue1993,Gotoh1998}. Similarly, the 
-enstrophy inertial range extends from forcing scale to the viscosity scale, characterized by
-a steeper energy spectrum as
+and a steeper enstrophy direct cascade branch ($k>k_f$) as
 \begin{equation}
     \mathcal{E}(k)=\mathcal{C'_{K}}\eta^{2/3}k^{-3},\label{eq:Kolmogorov_Kraichnan_spectrum_enstrophy}
 \end{equation}
-where $\mathcal{C'_{K}}$ is $1.3\sim1.6$ \citep{Maltrud1991,Smith1993,Paret1997,Chen2006,Borue1993,Gotoh1998}.
-
-In the zonostrophic turbulence regime, the inverse energy cascade extends well beyond 
-the crossover scale. Eddies larger than the crossover scale 
-are strongly influenced by the $\beta$-effect and therefore behave
-as Rossby waves. The unique dispersion relation of Rossby waves strongly
-modifies their energy transfer in a way that most of the energy is
-directed into the zonal modes so that jets spontaneously form and
-the flow becomes anisotropic (a simple explanation is given by \citeauthor{Vallis1993}
-{[}1993{]}; another explanation exploring a new invariant unique for
-Rossby waves is given by \nocite{Balk1991,Balk2005}Balk {[}1991,
-2005{]}, \citeauthor{Nazarenko2009} {[}2009{]}). As illustrated in Fig. \ref{EKE_KE_spectra_illustrate}, 
-the central piece of zonostrophic turbulence is that 
+where $\varepsilon$ and $\eta$ are the upscale energy flux and downscale enstrophy
+flux respectively; $\mathcal{C_{K}}$ and $\mathcal{C'_{K}}$ are the Kolmogorov constants
+of about $6\sim7$ and $1.3\sim1.6$ respectively\citep{Maltrud1991,Smith1993,Paret1997,Chen2006,Borue1993,Gotoh1998}.
+The central piece of zonostrophic turbulence is that 
 energy in the zonal modes (jets) follows a universal spectrum determined
 by $\beta$ and wavenumber as
 \begin{equation}
@@ -193,46 +214,19 @@ by $\beta$ and wavenumber as
 \end{equation}
 where $k_{x}$ is the zonal wavenumber, and the constant $\mathcal{C_{Z}}$
 is found to be about 0.5 \citep{Sukoriansky2002,Smith2002,Galperin2010}.
-Such spectrum has been observed in many numerical simulations \citep{Chekhlov1996,Smith2002,Huang2001,Sukoriansky2002,Sukoriansky2007},
+Such spectrum has been observed in many numerical simulations 
+\citep{Chekhlov1996,Smith2002,Huang2001,Sukoriansky2002,Sukoriansky2007},
 more or less in the Jovian atmosphere \citep{Sukoriansky2002,Choi2011,Galperin2014}
 and even in high-resolution ocean simulations \citep{Galperin2004}.
-The residual modes (eddies) still follow the isotropic inverse cascade
-spectrum (\ref{eq:Kolmogorov_Kraichnan_spectrum_energy}) eventhough the eddies are essentially waves. 
 Zonal and eddy kinetic spectra intersect at the crossover wavenumber $k_{\varepsilon}$.
-Eventually, friction comes into effect and halts the energy cascade at jet scale $k_r^{-1}$.
-Instead of using frictional parameter, the jet scale is conveniently estimated by 
-the Rhines scale, which in terms of wavenumber is
-\begin{equation}
-    k_{Rh}=(\beta/2U_{rms})^{1/2},\label{eq:Rhines_wavenumber_beta_Urms}
-\end{equation}
-where $U_{rms}$ is the rms velocity of the whole flow \citep{Rhines1975}.
-\footnote{the form and meaning of Rhines scale have been
-under debate since it has been proposed. In some studies, rms velocity
-of the eddies or the meridional wind has been used, while the Rhines scale itself
-has been used as an estimate for either eddy scale, jet scale, or
-the scale where energy gets channeled into jets \citep{Williams1978,Jansen2012,Chai2014,Liu2015,Chemke2015}.
-Here we choose the definition that is consistent with zonostrophic turbulence.} This estimation
-assumes that the total energy $U_{rms}^{2}/2$ is close to an integration of zonal energy spectrum
-Eq. (\ref{eq:zonostrophic_spectrum}) from $k_{r}$ to $\infty$, which yields $k_{r}\simeq1.2k_{Rh}$.
-
-The separation between Rhines scale and crossover scale, which can be measured by their ratio
-\begin{equation}
-Z=k_{\varepsilon}/k_{Rh},\label{eq:zonostrophic_index_def}
-\end{equation}
-clearly determines how anisotropic the flow is in the zonostrophic
-regime: the larger $Z$ is, the more the energy is in jets rather than
-eddies as the zonal energy spectrum is much steeper than the eddy energy spectrum. 
-In addition, it determines whether or not the flow has reached
-the zonostrophic regime in the first place. Specifically, \citet{Galperin2010}
-divide $\beta$-plane turbulence into two regimes -- zonostrophic
-regime and \textit{friction-dominated} regime -- and the transition
-between them based on $Z$. Therefore, $Z$ is coined as the \textit{zonostrophic
-index}. Zonostrophic turbulence with the universal spectrum (\ref{eq:zonostrophic_spectrum})
-is only reached when $Z$ is large enough: $Z\gtrsim2.5$. When $Z\lesssim1.5$,
-the regime is called friction-dominated as the inverse energy cascade
-is halted by friction before reaching the crossover scale. The flow
-is close to isotropic turbulence. The spectrum (\ref{eq:zonostrophic_spectrum})
-is no longer universal but the zonal spectrum is no more special than any of the other modes.
+Eventually, friction comes into effect and halts the energy cascade at jet scale $k_r^{-1}$,
+which is close to the Rhines scale.\footnote{The zonal spectrum (\ref{eq:zonostrophic_spectrum})
+also lays Rhines scale on a quantitative ground, as by assuming
+most energy is in the jets and an integration of (\ref{eq:zonostrophic_spectrum}) 
+from $k_{r}$ to $\infty$ we can get $k_{r}\simeq1.2k_{Rh}$.}
+As when inverse cascade proceeds beyond the crossover scale ($k<k_\varepsilon$), 
+the zonal mode contains more and more energy compared to eddies,
+clearly the larger $Z$ is, the more percentage of energy will be in the jets.
 
 Under the above picture, the focus of this paper -- forcing scale --
 does not seem to matter: whether jets form or not, strong or weak,
