@@ -171,9 +171,9 @@ from dimensional analysis, where $\mathcal{C_{K}}$ is the Kolmogorov constant of
 enstrophy inertial range extends from forcing scale to the viscosity scale, characterized by
 a steeper energy spectrum as
 \begin{equation}
-    \mathcal{E}(k)=\mathcal{C_{K}'}\eta^{2/3}k^{-3},\label{eq:Kolmogorov_Kraichnan_spectrum_enstrophy}
+    \mathcal{E}(k)=\mathcal{C'_{K}}\eta^{2/3}k^{-3},\label{eq:Kolmogorov_Kraichnan_spectrum_enstrophy}
 \end{equation}
-where $\mathcal{C}_{\mathcal{K}'}$ is $1.3\sim1.6$ \citep{Maltrud1991,Smith1993,Paret1997,Chen2006,Borue1993,Gotoh1998}.
+where $\mathcal{C'_{K}}$ is $1.3\sim1.6$ \citep{Maltrud1991,Smith1993,Paret1997,Chen2006,Borue1993,Gotoh1998}.
 
 In the zonostrophic turbulence regime, the inverse energy cascade extends well beyond 
 the crossover scale. Eddies larger than the crossover scale 
@@ -188,11 +188,9 @@ Rossby waves is given by \nocite{Balk1991,Balk2005}Balk {[}1991,
 the central piece of zonostrophic turbulence is that 
 energy in the zonal modes (jets) follows a universal spectrum determined
 by $\beta$ and wavenumber as
-
 \begin{equation}
 \mathcal{E_{Z}}(k)=\mathcal{C_{Z}}\beta^{2}k^{-5},\ k_{x}=0,\label{eq:zonostrophic_spectrum}
 \end{equation}
-
 where $k_{x}$ is the zonal wavenumber, and the constant $\mathcal{C_{Z}}$
 is found to be about 0.5 \citep{Sukoriansky2002,Smith2002,Galperin2010}.
 Such spectrum has been observed in many numerical simulations \citep{Chekhlov1996,Smith2002,Huang2001,Sukoriansky2002,Sukoriansky2007},
@@ -204,17 +202,15 @@ Zonal and eddy kinetic spectra intersect at the crossover wavenumber $k_{\vareps
 Eventually, friction comes into effect and halts the energy cascade at jet scale $k_r^{-1}$.
 Instead of using frictional parameter, the jet scale is conveniently estimated by 
 the Rhines scale, which in terms of wavenumber is
-
 \begin{equation}
     k_{Rh}=(\beta/2U_{rms})^{1/2},\label{eq:Rhines_wavenumber_beta_Urms}
 \end{equation}
-
 where $U_{rms}$ is the rms velocity of the whole flow \citep{Rhines1975}.
 \footnote{the form and meaning of Rhines scale have been
 under debate since it has been proposed. In some studies, rms velocity
 of the eddies or the meridional wind has been used, while the Rhines scale itself
 has been used as an estimate for either eddy scale, jet scale, or
-the scale where energy gets channeled into jets \citet{Williams1978,Jansen2012,Chai2014,Liu2015,Chemke2015}.
+the scale where energy gets channeled into jets \citep{Williams1978,Jansen2012,Chai2014,Liu2015,Chemke2015}.
 Here we choose the definition that is consistent with zonostrophic turbulence.} This estimation
 assumes that the total energy $U_{rms}^{2}/2$ is close to an integration of zonal energy spectrum
 Eq. (\ref{eq:zonostrophic_spectrum}) from $k_{r}$ to $\infty$, which yields $k_{r}\simeq1.2k_{Rh}$.
@@ -238,20 +234,18 @@ is halted by friction before reaching the crossover scale. The flow
 is close to isotropic turbulence. The spectrum (\ref{eq:zonostrophic_spectrum})
 is no longer universal but the zonal spectrum is no more special than any of the other modes.
 
-Under the above picture, whether jets form or not, strong or weak,
-seems to only be determined by the zonostrophic index $Z$. However,
-additional conditions to reach the zonostrophic turbulence regime
-are noted by \citet{Sukoriansky2007}: (a) the forcing scale is small
-enough compared with the crossover scale, specifically the ratio $k_{f}/k_{\varepsilon}\apprge4$;
-(b) energy cascade is halted before reaching the domain scale to avoid
-domain-scale energy condensation. The condition (a) can be understood
-from the locality hypothesis. Between the forcing scale and crossover
-scale the inverse energy cascade is close to that in isotropic
-turbulence with an inertial range (beyond the crossover scale, eddies
+Under the above picture, the focus of this paper -- forcing scale --
+does not seem to matter: whether jets form or not, strong or weak,
+is only determined by the zonostrophic index $Z$. However,
+an additional condition to reach the zonostrophic turbulence regime 
+is noted by \citet{Sukoriansky2007}: the forcing scale is small
+enough compared with the crossover scale, specifically the ratio $k_{f}/k_{\varepsilon}\apprge4$.
+This condition can be understood from the locality hypothesis: because the
+energy cascade is local within the inertial range between forcing scale
+and crossover scale, the details of the forcing, including the forcing scale,
+has no influence at the crossover scale (beyond the crossover scale, eddies
 transfer energy directly into jets on the largest scale so that energy
-transfer is highly non-local {[}\citealt{Manz2009}{]}). At end of
-the inertial range (at $k_{\varepsilon}$), the forcing scale may
-have no influence but only the energy flux rate $\varepsilon$ matters.
+transfer is highly non-local {[}\citealt{Manz2009}{]}). 
 The extent of the inverse cascade needed for the forcing scale to lose
 its influence depends on how local the energy transfer is under inverse
 cascade. \citet{Chen2006} pointed out that the inverse cascade is
@@ -310,7 +304,6 @@ in this study.}
 
 In this study, we aim to answer how the forcing scale influences the
 flow. From the above discussion, the ratio
-
 \begin{equation}
 \Pi=k_{f}/k_{\varepsilon}\label{eq:def_Pi_index}
 \end{equation}
@@ -338,12 +331,10 @@ $\omega_{t}$, consisting of two branches: an inverse energy cascade
 branch for $k<k_{f}$ and a direct enstrophy cascade branch for $k>k_{f}$.
 From dimensional analysis, the turbulence frequency in the inverse
 energy cascade branch is
-
 \begin{equation}
 \omega_{t}=\mathcal{C}_{\omega,\varepsilon}\varepsilon^{1/3}k^{2/3},\label{eq:eddy_turnover_freq_inverse_cascade}
 \end{equation}
 and in the direct enstrophy cascade branch is
-
 \begin{equation}
 \omega_{t}=\mathcal{C}_{\omega,\eta}\eta^{1/3},\label{eq:eddy_turnover_freq_direct_enstrophy_cascade}
 \end{equation}
@@ -732,7 +723,7 @@ spectrum for inverse energy cascade range (\ref{eq:Kolmogorov_Kraichnan_spectrum
 enstrophy cascade range (\ref{eq:Kolmogorov_Kraichnan_spectrum_enstrophy}),
 and zonal modes in the zonostrophic turbulence (\ref{eq:zonostrophic_spectrum})
 are shown for a comparison. The universal constants are chosen as
-$\mathcal{C_{K}}=6$, $\mathcal{C}_{\mathcal{K}'}=1.6$ and $\mathcal{C_{Z}}=0.5$
+$\mathcal{C_{K}}=6$, $\mathcal{C'_{K}}=1.6$ and $\mathcal{C_{Z}}=0.5$
 as those reported in the literature \citep{Boffetta2012,Galperin2010}.
 
 For the runs with $\Pi=4.5$ and 2.3, the energy spectra roughly agree
