@@ -228,67 +228,38 @@ As when inverse cascade proceeds beyond the crossover scale ($k<k_\varepsilon$),
 the zonal mode contains more and more energy compared to eddies,
 clearly the larger $Z$ is, the more percentage of energy will be in the jets.
 
-Under the above picture, the focus of this paper -- forcing scale --
-does not seem to matter: whether jets form or not, strong or weak,
-is only determined by the zonostrophic index $Z$. However,
-an additional condition to reach the zonostrophic turbulence regime 
-is noted by \citet{Sukoriansky2007}: the forcing scale is small
-enough compared with the crossover scale, specifically the ratio $k_{f}/k_{\varepsilon}\apprge4$.
-This condition can be understood from the locality hypothesis: because the
-energy cascade is local within the inertial range between forcing scale
-and crossover scale, the details of the forcing, including the forcing scale,
-has no influence at the crossover scale (beyond the crossover scale, eddies
-transfer energy directly into jets on the largest scale so that energy
-transfer is highly non-local {[}\citealt{Manz2009}{]}). 
-The extent of the inverse cascade needed for the forcing scale to lose
-its influence depends on how local the energy transfer is under inverse
-cascade. \citet{Chen2006} pointed out that the inverse cascade is
-only weakly local in scale: energy flux across scale $l$ involves
+The above zonostrophic turbulence picture and the derivation of
+crossover scale in (\ref{eq:classical_crossover_wavenumber}) assume
+that the forcing scale is much smaller than the crossover scale so that
+there exists an extended inverse cascade range in between.
+The details of the forcing, including the forcing scale,
+may lose their influence on the large scale flow due to
+the locality hypothesis. This is probably true when $k_{f}/k_{\varepsilon}\apprge4$,
+which is noted by \citet{Sukoriansky2007} as a prerequisite
+to reach zonostrophic turbulence and is due to the fact
+that the inverse cascade is only weakly local in scale: 
+energy flux across scale $l$ involves
 the thinning of subscale eddies 4 to 8 times smaller than $l$ by
-the strain at $l$. Therefore, an isotropic inverse cascade must at
-least extend to 4 times the forcing scale in order for the forcing
-scale to lose its influence. Condition (a) $k_{f}/k_{\varepsilon}\apprge4$
-is likely to be the minimum bound for the forcing scale to have no
-influence in the zonostrophic turbulence regime.
-
-Assuming an extended isotropic inverse cascade range so that forcing
-scale and other details of the forcing are irrelevant (and also assuming
-the viscosity to be irrelevant), and condition (b) so that domain
-size is irrelevant, the zonostrophic index $Z$ is in fact the only
-nondimensional number that fully determines the flow. However, such
-an extended inverse cascade hardly exists in many real geophysical
-flows. In Earth's atmosphere, the forcing scale is the baroclinic
-instability scale, and it is very close to the largest eddy scale
-and the jet scale \citep{Schneider2006,Merlis2009}. A clear isotropic
-inverse cascade with the theoretical spectrum (\ref{eq:Kolmogorov_Kraichnan_spectrum_energy})
-is not seen. In the ocean, which displays some hints of an inverse
-cascade, the scale separation between forcing and energy halting scales
-is within 2 to 3 times \citep{Tulloch2011}. Therefore, the role of
-forcing scale is not likely to be negligible.
-
-Moreover, literature on potential vorticity (PV) staircase hints that
-the flow may reach a new turbulence regime when $k_{f}/k_{\varepsilon}<1$
-and $Z$ is large enough. PV staircase has long been hypothesized
+the strain at $l$ \citep{Chen2006}.
+The condition $k_{f}/k_{\varepsilon}\apprge4$, however, 
+is rarely satisfied in many real geophysical flows, 
+for example, in the Earth's atmosphere \citep{Schneider2006,Merlis2009}
+and oceans \citep{Tulloch2011}. In this case, the details of
+forcing is not likely to be negligible. Furturemore, literature 
+on potential vorticity (PV) staircase hints that
+forcing scale itself may play an important role 
+in jet formation when it is comparable to crossover scale.
+PV staircase has long been hypothesized
 as a model for jet formation, which is the limiting case that PV is
 perfectly mixed between jets while having distinct jumps at the center
 of jets \citep{Marcus1993,Marcus1998,Dunkerton2008,Dritschel2008}.
-As a mathematical fact of a perfect PV staircase, the zonal kinetic
-energy spectrum is approximately $\mathcal{E_{Z}}(k)\sim k^{-4}$
-at large scales \citep{Saffman1971,Danilov2004a}. The flow with a
-near-perfect PV staircase structure has been recently realized in
-simulations by \citet{Scott2012}. Energy spectra of the flow deviate
-from those in the zonostrophic regime. The slope of zonal kinetic
-energy spectrum appears to be closer to -4 than -5, and the slope
-of eddy kinetic energy spectrum is clearly much steeper than -5/3.
-Therefore, the PV staircase flow probably does not belong to the zonostrophic
-turbulence regime although \citet{Scott2012} suggest the very high
-zonostrophic index as the key to obtain the PV staircase. Examining
-conditions (a) and (b), it is likely that condition (b) is satisfied
-whereas condition (a) is strongly violated. Using their experiment
-setup, our calculation suggests that in \citeauthor{Scott2012}'s
-(2012) simulations $k_{f}/k_{\varepsilon}<1$, which may be the criterion
-for the formation of PV staircase in addition to the high zonostrophic
-index.\footnote{In a later study, \citet{Scott2012a} suggest that PV staircase can
+The flow with a near-perfect PV staircase structure has been recently 
+simulated by \citet{Scott2012}. Although \citet{Scott2012} suggest the very high
+zonostrophic index as the key to obtain the PV staircase, examining
+their experiment setup, our calculation suggests that 
+$k_{f}/k_{\varepsilon}<1$, which may be the additional criterion
+to get PV staircase.
+\footnote{In a later study, \citet{Scott2012a} suggest that PV staircase can
 easily form when the forcing scale is as large as the jet scale and
 $k_{f}/k_{\varepsilon}\apprle1/6$, which is more extreme than the
 condition we suggest here. This extreme regime is reached by a rather
@@ -303,8 +274,9 @@ flow. From the above discussion, the ratio
 \end{equation}
 suggests itself as an important nondimensional number to characterize
 the role of the forcing scale. When $\Pi<1$, the scale $k_{\varepsilon}^{-1}$
-is now within the direct enstrophy cascade range and therefore loses
-it meaning as the turbulence-wave crossover scale. This paper is organized
+is now within the direct enstrophy cascade range and therefore formulation
+of turbulence-wave crossover scale in (\ref{eq:classical_crossover_wavenumber})
+should no longer hold. This paper is organized
 as followings. In section 2, we derive a new crossover scale in the
 enstrophy cascade branch for $\Pi<1$. In section 3, a set of experiments
 varying both $\Pi$ and $Z$ are carried out. Experiment results are
