@@ -145,17 +145,18 @@ these regimes will be a first step towards a general circulation theory.
 One nondimensional number that is well-known to determine the anisotropy
 of the flow is the ratio between two length scales: the Rhines scale
 and the turbulence-wave crossover scale. The Rhines scale
-may be considered as the jet scale, which in terms of wavenumber is
+can be viewed as the jet scale, and in terms of wavenumber it is
 \begin{equation}
     k_{Rh}=(\beta/2U_{rms})^{1/2},\label{eq:Rhines_wavenumber_beta_Urms}
 \end{equation}
-where $U_{rms}$ is the rms velocity of the whole flow \citep{Rhines1975}.
-\footnote{The form and meaning of Rhines scale have been
+where $U_{rms}$ is the rms velocity of the whole flow \citep{Rhines1975}.\footnote{
+The form and meaning of Rhines scale have been
 under debate since it has been proposed. In some studies, rms velocity
 of the eddies or the meridional wind has been used, while the Rhines scale itself
 has been used as an estimate for either eddy scale, jet scale, or
 the scale where energy gets channeled into jets \citep{Williams1978,Jansen2012,Chai2014,Liu2015,Chemke2015}.
-Here we choose the definition that is consistent with zonostrophic turbulence.}
+Here we choose the form and meaning that are consistent 
+with the zonostrophic turbulence.}
 The turbulence-wave crossover scale marks the transition from
 isotropic eddies to Rossby waves, which in term of wavenumber is
 \begin{equation}
@@ -172,40 +173,41 @@ Intuitively, the ratio of the two scales
     Z=k_{\varepsilon}/k_{Rh},\label{eq:zonostrophic_index_def}
 \end{equation}
 determines whether jets form or not, strong or weak, as the larger
-$Z$ is, the larger range of scales of eddies will become Rossby waves, whose
-unique dispersion relation strongly modifies their energy transfer in a way 
+$Z$ is, the larger range of scales of eddies become Rossby waves, whose
+unique dispersion relation modifies their energy transfer in a way 
 that most of the energy is directed into the zonal modes (a simple explanation 
 is given by \citeauthor{Vallis1993}
 {[}1993{]}; another explanation exploring a new invariant unique for
 Rossby waves is given by \nocite{Balk1991,Balk2005}Balk {[}1991,
 2005{]}, \citeauthor{Nazarenko2009} {[}2009{]}).
 Specifically, \citet{Galperin2010}
-divide $\beta$-plane turbulence into two regimes based on $Z$ -- \textit{zonostrophic}
-regime for $Z\gtrsim2.5$ and \textit{friction-dominated} regime
-for $Z\lesssim1.5$ -- and the transition between them. 
-And $Z$ is coined as the \textit{zonostrophic
-index}. Zonostrophic turbulence gets its name because the flow
-is dominated by strong zonal jets. Whereas in the friction-dominated
-regime, the inverse energy cascade is halted by friction before reaching the 
-crossover scale and thus the flow is close to isotropic turbulence.
+divide $\beta$-plane turbulence into two regimes based on $Z$: 
+\textit{zonostrophic} regime for $Z\gtrsim2.5$ and 
+\textit{friction-dominated} regime for $Z\lesssim1.5$. 
+Therefore, $Z$ is coined as the zonostrophic index. 
+Zonostrophic turbulence gets its name because the flow
+is dominated by strong zonal jets. The friction-dominated
+regime is close to isotropic turbulence as the inverse energy cascade
+is halted by friction before reaching the crossover scale.
 
 Quantitatively, the energy spectra of eddies and zonal flow for the
 zonostrophic turbulence, as 
 illustrated in Fig. \ref{EKE_KE_spectra_illustrate}, further
 explain how the zonostrophic index $Z$ set the anisotropy of the flow. 
 Let the 2d flow be stirred by a spectrally localized forcing at a (high) wavenumber $k_{f}$.
-The eddies keeps the same the energy spectrum as the isotropic turbulence,
+The eddies keep the same the energy spectrum as the isotropic turbulence,
 with an energy inverse cascade branch ($k<k_f$) as 
 \begin{equation}
-    \mathcal{E}(k)=\mathcal{C_{K}}\varepsilon^{2/3}k^{-5/3}\label{eq:Kolmogorov_Kraichnan_spectrum_energy}
+    \mathcal{E}(k)=\mathcal{C_{K}}\varepsilon^{2/3}k^{-5/3},\label{eq:Kolmogorov_Kraichnan_spectrum_energy}
 \end{equation}
 and a steeper enstrophy direct cascade branch ($k>k_f$) as
 \begin{equation}
     \mathcal{E}(k)=\mathcal{C'_{K}}\eta^{2/3}k^{-3},\label{eq:Kolmogorov_Kraichnan_spectrum_enstrophy}
 \end{equation}
-where $\varepsilon$ and $\eta$ are the upscale energy flux and downscale enstrophy
-flux respectively; $\mathcal{C_{K}}$ and $\mathcal{C'_{K}}$ are the Kolmogorov constants
-of about $6\sim7$ and $1.3\sim1.6$ respectively\citep{Maltrud1991,Smith1993,Paret1997,Chen2006,Borue1993,Gotoh1998}.
+where $\varepsilon$ and $\eta$ are the upscale energy and downscale enstrophy
+fluxes respectively; $\mathcal{C_{K}}$ and $\mathcal{C'_{K}}$ 
+are the Kolmogorov constants of about $6\sim7$ and $1.3\sim1.6$ respectively
+\citep{Maltrud1991,Smith1993,Paret1997,Chen2006,Borue1993,Gotoh1998}.
 The central piece of zonostrophic turbulence is that 
 energy in the zonal modes (jets) follows a universal spectrum determined
 by $\beta$ and wavenumber as
@@ -220,13 +222,15 @@ more or less in the Jovian atmosphere \citep{Sukoriansky2002,Choi2011,Galperin20
 and even in high-resolution ocean simulations \citep{Galperin2004}.
 Zonal and eddy kinetic spectra intersect at the crossover wavenumber $k_{\varepsilon}$.
 Eventually, friction comes into effect and halts the energy cascade at jet scale $k_r^{-1}$,
-which is close to the Rhines scale.\footnote{The zonal spectrum (\ref{eq:zonostrophic_spectrum})
+which is close to the Rhines scale as mentioned before.\footnote{
+The zonal spectrum (\ref{eq:zonostrophic_spectrum})
 also lays Rhines scale on a quantitative ground, as by assuming
 most energy is in the jets and an integration of (\ref{eq:zonostrophic_spectrum}) 
 from $k_{r}$ to $\infty$ we can get $k_{r}\simeq1.2k_{Rh}$.}
-As when inverse cascade proceeds beyond the crossover scale ($k<k_\varepsilon$), 
-the zonal mode contains more and more energy compared to eddies,
-clearly the larger $Z$ is, the more percentage of energy will be in the jets.
+As the zonal energy spectrum (\ref{eq:zonostrophic_spectrum}) 
+contains much more energy than eddy energy spectrum 
+(\ref{eq:Kolmogorov_Kraichnan_spectrum_energy}) for $k<k_\varepsilon$,
+jets dominate the flow when $Z$ is large.
 
 The above zonostrophic turbulence picture and the derivation of
 crossover scale in (\ref{eq:classical_crossover_wavenumber}) assume
@@ -236,30 +240,34 @@ The details of the forcing, including the forcing scale,
 may lose their influence on the large scale flow due to
 the locality hypothesis. This is probably true when $k_{f}/k_{\varepsilon}\apprge4$,
 which is noted by \citet{Sukoriansky2007} as a prerequisite
-to reach zonostrophic turbulence and is due to the fact
+to reach zonostrophic turbulence and can be understood from the fact
 that the inverse cascade is only weakly local in scale: 
 energy flux across scale $l$ involves
 the thinning of subscale eddies 4 to 8 times smaller than $l$ by
 the strain at $l$ \citep{Chen2006}.
 The condition $k_{f}/k_{\varepsilon}\apprge4$, however, 
-is rarely satisfied in many real geophysical flows, 
-for example, in the Earth's atmosphere \citep{Schneider2006,Merlis2009}
+is not satisfied in the Earth's atmosphere \citep{Schneider2006,Merlis2009}
 and oceans \citep{Tulloch2011}. In this case, the details of
-forcing is not likely to be negligible. Furturemore, literature 
+forcing may not be negligible. Furturemore, literature 
 on potential vorticity (PV) staircase hints that
-forcing scale itself may play an important role 
-in jet formation when it is comparable to crossover scale.
+forcing scale itself can play an important role 
+in jet formation especially when it is comparable to the crossover scale.
 PV staircase has long been hypothesized
 as a model for jet formation, which is the limiting case that PV is
 perfectly mixed between jets while having distinct jumps at the center
 of jets \citep{Marcus1993,Marcus1998,Dunkerton2008,Dritschel2008}.
-The flow with a near-perfect PV staircase structure has been recently 
-simulated by \citet{Scott2012}. Although \citet{Scott2012} suggest the very high
-zonostrophic index as the key to obtain the PV staircase, examining
-their experiment setup, our calculation suggests that 
-$k_{f}/k_{\varepsilon}<1$, which may be the additional criterion
-to get PV staircase.
-\footnote{In a later study, \citet{Scott2012a} suggest that PV staircase can
+The flow with a near-perfect PV staircase structure has been 
+simulated by \citet{Scott2012}, who suggest the very high
+zonostrophic index as the key to obtain the PV staircase. 
+Although dominated by strong jets as the zonostrophic turbulence,
+a perfect PV staircase has a shallower spectrum slope than
+(\ref{eq:zonostrophic_spectrum}) as a mathematical fact \citep{Saffman1971,Danilov2004}.
+This suggests that the PV staircase may not exactly in the zonostrophic
+regime despite having very high zonostrophic index.
+Examining their experiment setup, our calculation suggests that 
+$k_{f}/k_{\varepsilon}<1$ may be the additional criterion
+to reach the PV staircase regime.\footnote{
+In a later study, \citet{Scott2012a} suggest that PV staircase can
 easily form when the forcing scale is as large as the jet scale and
 $k_{f}/k_{\varepsilon}\apprle1/6$, which is more extreme than the
 condition we suggest here. This extreme regime is reached by a rather
