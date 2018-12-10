@@ -296,9 +296,11 @@ its relevance with the observed geophysical flows.
 
 \section{Theory}
 
-Consider the first case where $\beta$-effect does not affect the flow at the forcing
-scale so that the classical dual cascades extend from the forcing
-wavenumber $k_{f}$. Energy inversely cascades to larger scales and
+In this section, we follow the way \citet{Vallis1993} used to derive 
+the classical turbulence-wave crossover scale but generalize it
+to work for the case $\Pi<1$. First consider scalings in a 2d flow forced
+at wavenumber $k_{f}$ based on phenomenology of isotropic turbulence. 
+Energy inversely cascades to larger scales and
 enstrophy directly cascades to smaller scales. The inverse of eddy
 turnover time defines a strain rate, or ``turbulence frequency''
 $\omega_{t}$, consisting of two branches: an inverse energy cascade
@@ -315,35 +317,30 @@ and in the direct enstrophy cascade branch is
 where $\mathcal{C}_{\omega,\varepsilon}$ and $\mathcal{C}_{\omega,\eta}$
 are universal constants. If the forcing scale is well localized, enstrophy
 flux is related to energy flux by
-
 \begin{equation}
 \eta=k_{f}^{2}\varepsilon.\label{eq:energy_enstrophy_flux_relationship}
 \end{equation}
 As $\omega_{e}$ must be continuous across $k_{f}$, we have
-
-\[
-\mathcal{C}_{\omega,\varepsilon}\varepsilon^{1/3}k_{f}^{2/3}=\mathcal{C}_{\omega,\eta}\eta^{1/3}.
-\]
-Using the relation (\ref{eq:energy_enstrophy_flux_relationship}),
+\begin{equation}
+\mathcal{C}_{\omega,\varepsilon}\varepsilon^{1/3}k_{f}^{2/3}=\mathcal{C}_{\omega,\eta}\eta^{1/3}.\label{eq:turbulence_freq_continuity}
+\end{equation}
+Using the relations (\ref{eq:energy_enstrophy_flux_relationship}) and (\ref{eq:turbulence_freq_continuity}),
 we relate the two constants as $\mathcal{C}_{\omega,\varepsilon}=\mathcal{C}_{\omega,\eta}$.
-Therefore, a general form for $\omega_{t}$ can be written as
-
+Therefore, $\omega_{t}$ can be written concisely as
 \begin{equation}
 \omega_{t}=\mathcal{C}_{\omega,\varepsilon}\varepsilon^{1/3}\begin{cases}
 k^{2/3}, & k<k_{f}\\
 k_{f}^{2/3}, & k>k_{f}
 \end{cases},\label{eq:eddy_turnover_freq_general_form}
 \end{equation}
-which is a monotonic function increasing with $k$.
+which is a monotonic nondecreasing function with $k$.
 
 The well-known Rossby wave frequency is 
-
 \begin{equation}
 \omega_{\beta}=-\frac{\beta k_{x}}{k^{2}}.\label{eq:Rossby_wave_freq_kx_k}
 \end{equation}
 As the crossover scale is at the isotropic turbulence boundary, we
-take $k_{x}\sim k$ and the magnitude of Rossby wave frequency is
-
+take $k_{x}\sim k$ and get the magnitude of Rossby wave frequency as
 \begin{equation}
 |\omega_{\beta}|\simeq\frac{\beta}{k}.\label{eq:Rossby_wave_freq_k}
 \end{equation}
