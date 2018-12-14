@@ -344,53 +344,26 @@ take $k_{x}\sim k$ and get the magnitude of Rossby wave frequency as
 \begin{equation}
 |\omega_{\beta}|\simeq\frac{\beta}{k}.\label{eq:Rossby_wave_freq_k}
 \end{equation}
-As illustrated in Fig. \ref{crossover_illustrate}, the classical
-crossover wavenumber $k_{\varepsilon}$ is assumed to be the intersection
-of the energy cascade branch of $\omega_{t}$ and $|\omega_{\beta}|$,
-written as
-
+As illustrated in Fig. \ref{crossover_illustrate}, the turbulence frequency
+$\omega_{t}$ and Rossby wave frequency $|\omega_{\beta}|$ intersects at a
+unique wavenumber -- the turbulence-wave crossover wavenumber.
+If $\Pi>1$, the crossover scale is within the energy cascade range as
+$|\omega_\beta|$ intersects with the energy cascade branch of $\omega_t$,
+which gives the classicial scaling $k_\varepsilon$ in (\ref{eq:classical_crossover_wavenumber}).
+If $\Pi<1$, the crossover scale is now within the entrophy cascade regime
+as $|\omega_\beta|$ intersects with the enstrophy cascade branch of $\omega_t$
+at 
 \begin{equation}
-k_{\varepsilon}=\mathcal{C}_{\omega,\varepsilon}^{-3/5}\beta^{3/5}\varepsilon^{-1/5}.\label{eq:crossover_k_energy_branch}
+k_{\eta}=\mathcal{C}_{\omega,\varepsilon}^{-1}\beta\varepsilon^{-1/3}k_{f}^{-2/3}.\label{eq:crossover_k_enstrophy_branch}
 \end{equation}
-However, it is also possible that the enstrophy cascade branch of
-$\omega_{t}$ intersects $|\omega_{\beta}|$ at
-
-\begin{equation}
-k_{\eta}=\mathcal{C}_{\mathcal{K}}^{-1/2}\beta\varepsilon^{-1/3}k_{f}^{-2/3}.\label{eq:crossover_k_enstrophy_branch}
-\end{equation}
-The relationship between $k_{\varepsilon}$ and $k_{\eta}$ can be
-seen clearly using the non-dimensional number $\Pi$ we proposed in
-the introduction as
-
+In this case the classical crossover wavenumber $k_\varepsilon$ loses its meaning.
+However, for convenience of use, we can rewrite this new crossover wavenumber $k_\eta$
+in terms of $k_\varepsilon$ and $\Pi$ as
 \begin{equation}
 k_{\eta}=\Pi^{-2/3}k_{\varepsilon}.\label{eq:k_eta_k_epsilon_relation}
 \end{equation}
-As $|\omega_{\beta}|$ monotonically decreases with $k$ and $\omega_{t}$
-monotonically increases with $k$, $\omega_{t}$ and $|\omega_{\beta}|$
-will intersect at a unique wavenumber. We regard this wavenumber as
-the generalized crossover wavenumber, denoted by $k_{\beta}$. As
-seen from Fig. \ref{crossover_illustrate}, which branch of $\omega_{t}$
-intersects with $|\omega_{\beta}|$ and therefore which one of $k_{\varepsilon}$
-and $k_{\eta}$ gives the generalized crossover wavenumber $k_{\beta}$
-can be conveniently determined by $\Pi$. If $\Pi>1$, the crossover
-scale is within the energy cascade range, in which the formally evaluated
-$k_{\eta}$ obeys
-
-\[
-k_{\eta}<k_{\varepsilon}=k_{\beta}<k_{f},
-\]
-and the classical crossover wavenumber keeps its meaning. If $\Pi<1$,
-the crossover scale in now within the enstrophy cascade regime, and
-we have
-
-\[
-k_{f}<k_{\varepsilon}<k_{\eta}=k_{\beta}.
-\]
-Now the classical crossover wavenumber loses its meaning. At $\Pi=1$,
-all the three wavenumbers $k_{f}$, $k_{\varepsilon}$ and $k_{\eta}$
-are identical. For both energy and enstrophy cascade ranges, the
-generalized crossover wavenumber can be conveniently summarized as
-
+Now for both energy and enstrophy cascade range, the generalized crossover wavenumber
+can be summarized as
 \begin{equation}
 k_{\beta}=\max(k_{\varepsilon},k_{\eta})=k_{\varepsilon}\max(1,\Pi^{-2/3}),\label{eq:generalized_crossover_wavenumber}
 \end{equation}
@@ -400,7 +373,7 @@ The range of of scales influenced by the $\beta$-effect determines
 how anisotropic the flow is. When $\Pi<1$, the classical scaling
 $k_{\varepsilon}$ underestimates the generalized crossover wavenumber.
 In this case, the zonostrophic index $Z$ underestimates the range
-of scales under $\beta$-effect and thus underestimates the anisotropy
+of scales under $\beta$-effect and thus should underestimate the anisotropy
 of the flow. Using the generalized crossover wavenumber $k_{\beta}$,
 we may define a ``jet index'' to properly measure the width of the
 range of scales under $\beta$-effect as
@@ -409,30 +382,22 @@ range of scales under $\beta$-effect as
 Z_{J}=\frac{k_{\beta}}{k_{Rh}}=\max(1,\Pi^{-2/3})Z.\label{eq:jet index}
 \end{equation}
 Here we assume that the Rhines scale still roughly gives the energy
-halting scale, though the energy halting scale will inevitably have a
+halting scale, though the energy halting scale will probably have a
 dependency on $\Pi$ as the universal spectrum (\ref{eq:zonostrophic_spectrum})
-does not hold in the $\Pi<1$ regime. Using the jet index, we would
+is unlikely to hold in the $\Pi<1$ regime as discussed in the introduction. 
+Using the jet index, we would
 expect the jets to be even stronger if $\Pi$ is reduced to below 1 for
-the same zonostrophic index. As an analogy of the transition between
-friction-dominated and zonostrophic regimes based on $Z$, a more
-general condition for jet formation may be that $Z_{J}$ be larger than a
-critical value $Z_{c}$:
-
-\[
-Z_{J}\apprge Z_{c},
-\]
-which gives
-\[
-Z\apprge Z_{c}\min(1,\Pi^{2/3}).
-\]
-This means that jet formation may be easier when $\Pi$ is reduced
-below 1 for the same zonostrophic index $Z$. The boundary of jet
-formation is now determined by both $Z$ and $\Pi$. 
+the same zonostrophic index. It could also mean that jet 
+formation may be easier when $\Pi$ is reduced
+below 1 for the same zonostrophic index $Z$: the boundary of jet
+formation is determined by both $Z$ and $\Pi$. 
 
 A caveat in the above derivation is that the turbulence frequency (\ref{eq:eddy_turnover_freq_direct_enstrophy_cascade})
 is in the form of an isotropic turbulence. However, when $\Pi<1$
-we have $k_{f}<k_{\beta}$ so we cannot expect eddies at the forcing
-scale to be isotropic. The derivation is rescued by assuming a non-local
+the forcing scale is larger than crossover scale
+so we cannot expect eddies at the forcing scale to be isotropic
+turbulence but they already behave as Rossy waves.
+The derivation is rescued by assuming a non-local
 enstrophy cascade. The dominate straining for $k>k_{f}$ comes from
 the shear of the largest scale jets. The eddies are sheared apart
 by the jets and thus transfer enstrophy directly to the viscosity
