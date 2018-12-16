@@ -198,23 +198,23 @@ Let the 2d flow be stirred by a spectrally localized forcing at a (high) wavenum
 The eddies keep the same the energy spectrum as the isotropic turbulence,
 with an energy inverse cascade branch ($k<k_f$) as 
 \begin{equation}
-    \mathcal{E}(k)=\mathcal{C_{K}}\varepsilon^{2/3}k^{-5/3},\label{eq:Kolmogorov_Kraichnan_spectrum_energy}
+    \mathcal{E}(k)=\mathcal{C}_K\varepsilon^{2/3}k^{-5/3},\label{eq:Kolmogorov_Kraichnan_spectrum_energy}
 \end{equation}
 and a steeper enstrophy direct cascade branch ($k>k_f$) as
 \begin{equation}
-    \mathcal{E}(k)=\mathcal{C'_{K}}\eta^{2/3}k^{-3},\label{eq:Kolmogorov_Kraichnan_spectrum_enstrophy}
+    \mathcal{E}(k)=\mathcal{C'}_K\eta^{2/3}k^{-3},\label{eq:Kolmogorov_Kraichnan_spectrum_enstrophy}
 \end{equation}
 where $\varepsilon$ and $\eta$ are the upscale energy and downscale enstrophy
-fluxes respectively; $\mathcal{C_{K}}$ and $\mathcal{C'_{K}}$ 
+fluxes respectively; $\mathcal{C}_K$ and $\mathcal{C'}_K$ 
 are the Kolmogorov constants of about $6\sim7$ and $1.3\sim1.6$ respectively
 \citep{Maltrud1991,Smith1993,Paret1997,Chen2006,Borue1993,Gotoh1998}.
 The central piece of zonostrophic turbulence is that 
 energy in the zonal modes (jets) follows a universal spectrum determined
 by $\beta$ and wavenumber as
 \begin{equation}
-\mathcal{E_{Z}}(k)=\mathcal{C_{Z}}\beta^{2}k^{-5},\ k_{x}=0,\label{eq:zonostrophic_spectrum}
+\mathcal{E}_{Z}(k)=\mathcal{C}_Z\beta^{2}k^{-5},\ k_{x}=0,\label{eq:zonostrophic_spectrum}
 \end{equation}
-where $k_{x}$ is the zonal wavenumber, and the constant $\mathcal{C_{Z}}$
+where $k_{x}$ is the zonal wavenumber, and the constant $\mathcal{C}_Z$
 is found to be about 0.5 \citep{Sukoriansky2002,Smith2002,Galperin2010}.
 Such spectrum has been observed in many numerical simulations 
 \citep{Chekhlov1996,Smith2002,Huang2001,Sukoriansky2002,Sukoriansky2007},
@@ -447,7 +447,8 @@ of 511 (1024$^{2}$ equivalent horizontal gridpoints), and a leap-frog
 method with a weak Robert filter for time stepping \citep{Patterson1971}.
 More details on the model is described in \citet{Smith2002}.
 
-Ignoring the dependency on the exact form of the random forcing, Eq.
+Ignoring the dependency on the exact form of the random forcing 
+($\delta k_f$, decorrelation time scale, etc.), Eq.
 (\ref{eq:barotropic_vorticity_eq}) is fully characterized by 4 non-dimensional
 numbers constructed from \{$\varepsilon$,$\beta$,$r$,$k_{f}$,$L$,$\nu$\},
 where $L$ is the size of the domain. Suppose that the energy has
@@ -457,48 +458,40 @@ $\nu$, which determines the exact scale of enstrophy dissipation,
 does not matter. Under these assumptions, the system is fully characterized
 by 2 non-dimensional numbers constructed from \{$\varepsilon$,$\beta$,$r$,$k_{f}$\}.
 As mentioned in the introduction, the two non-dimensional numbers
-are chosen as the zonostrophic index 
-
+are chosen to be the zonostrophic index 
 \begin{equation}
 Z=k_{\varepsilon}/k_{Rh},\label{eq:zono_idx_estimate}
 \end{equation}
 and
-
 \[
 \Pi=k_{f}/k_{\varepsilon}.
 \]
 Multiplying (\ref{eq:barotropic_vorticity_eq}) with $-\psi$ yields
-an equation governing the time evolution of total energy $E$ as
-
+an equation governing the time evolution of energy $E$ as
 \begin{equation}
 \frac{dE}{dt}=\varepsilon-2rE.\label{eq:energy_evolution_equation}
 \end{equation}
 In equilibrium, the domain averaged total kinetic energy $E$ and
 thus rms velocity $U_{rms}$ can be related to upscale energy flux
 and frictional rate $r$ as
-
 \[
 2rE=\varepsilon,
 \]
 where 
-
 \[
 E=\frac{1}{2}\langle u^{2}+v^{2}\rangle=\frac{1}{2}U_{rms}^{2}.
 \]
 The Rhines wavenumber in (\ref{eq:Rhines_wavenumber_beta_Urms}) can
 be rewritten as
-
 \begin{equation}
 k_{Rh}=2^{-1/2}\beta^{1/2}r^{1/4}\varepsilon^{-1/4}.\label{eq:Rhines_wavenumber_beta_r_epsilon}
 \end{equation}
 Now we can express $Z$ and $\Pi$ using \{$\varepsilon$,$\beta$,$r$,$k_{f}$\}
 as
-
 \begin{equation}
 Z=0.85\beta^{1/10}\varepsilon^{1/20}r^{-1/4},\label{eq:Z_estimate_in_work}
 \end{equation}
 and
-
 \begin{equation}
 \Pi=1.67\beta^{-3/5}\varepsilon^{1/5}k_{f},\label{eq:PI_estimate_in_work}
 \end{equation}
@@ -506,27 +499,27 @@ where we use $\mathcal{\mathcal{C}_{\varepsilon}}=0.6$ in (\ref{eq:classical_cro
 
 As $Z$ and $\Pi$ have the highest power law dependency on $r$ and
 $k_{f}$ respectively, it is easiest to vary $r$ and $k_{f}$ to
-explore the $(Z,\Pi)$ space. In order to make sure that the energy halting
-scale is always smaller than the domain scale when we vary $r$, we impose
+explore the $(Z,\Pi)$ space. In order to make sure that the energy is
+always halted before reaching the domain size when we vary $r$, we impose
 the ratio $\varepsilon_{0}/r$=$(\pi/4)^{2}$ and $\beta=16\pi$ so
 that $k_{Rh}\simeq5.7$, as the way used by \citet{Scott2012}. In
 the actual simulations, the number of jets varies from 3 to 5, which
 largely agrees with the Rhines wavenumber. The linear friction rate
 $r$ is varied among $10^{-4}\times$(4096, 1024, 256, 64, 8, 1) so
-that the zonostrophic index $Z$ varies from 1.4 to 7.3. A consideration
-on the choice of forcing scale is that the forcing scale should be
-smaller than the energy halting scale. Otherwise the flow is
-uninteresting as energy is directly dissipated by friction at the
-forcing scale without much nonlinear interactions. For each frictional
+that the zonostrophic index $Z$ varies from 1.4 to 7.3. For each frictional
 rate $r$, forcing wavenumber $k_{f}$ is varied among 16, 32, 64
 and 128 (for the lowest friction $r=10^{-4}$, one experiment $k_{f}=128$
 is not carried out due to the high computational cost to simulate
-such a low-friction flow). The largest forcing scale at wavenumber $k_{f}=16$ is
-still sufficiently smaller than the jet scale so that we ensure there
-is enough range of nonlinear interactions. In $(Z,\Pi)$ space, we
-can draw a crude boundary that $\Pi$ and $Z$ should at least satisfy
+such a low-friction flow). A consideration
+on the choice of forcing scale is that the forcing scale should be
+smaller than the energy halting scale. Otherwise the flow is
+uninteresting as energy is directly dissipated by friction at the
+forcing scale without much nonlinear interactions.
+The largest forcing scale here ($k_{f}=16$) is
+still sufficiently smaller than the jet scale so that we ensure
+enough room for nonlinear interactions. Under the above consideration,
+we can draw a crude boundary in the $(Z,\Pi)$ space
 for the flow to be interesting:
-
 \begin{equation}
 \Pi Z=k_{f}/k_{Rh}>1.\label{eq:PIxZ>1}
 \end{equation}
@@ -535,8 +528,8 @@ where each simulation is indicated by either dot or triangle. The
 regime $\Pi<1$ is reached in some simulations with relatively large
 zonostrophic index $Z\apprge3$. 
 
-Theoretically, we can sample the corner of $(Z,\Pi)$ space that has
-both high $Z$ and $\Pi$ by simply increasing the forcing wavenumber.
+Theoretically, we can sample the corner of $(Z,\Pi)$ space where
+both $Z$ and $\Pi$ are high by simply increasing the forcing wavenumber.
 In reality, however, this would require a prohibitive computational
 power. The high $Z$ regime needs a long time to equilibrate, which
 can be roughly estimated as $1/r$. In practice, the flow with the
@@ -558,12 +551,10 @@ relatively small ($Z\apprle2.5$) or large ($Z\apprge2.5$). Finally,
 the formation of PV staircase when $Z$ is very large ($Z\apprge7.3$)
 is examined.
 
-
 \subsection*{a. Jet formation boundary ($Z\apprle2.5$)}
 
 To have an overview on what the anisotropy (or jet strength) looks
-in the $(Z,\Pi)$ space, we define an anisotropy index $\chi$ as
-
+like in the $(Z,\Pi)$ space, we define an anisotropy index $\chi$ as
 \[
 \chi=\langle\frac{u^{2}}{u^{2}+v^{2}}\rangle,
 \]
@@ -572,28 +563,28 @@ isotropic turbulence, the anisotropy index $\chi$ should be 0.5
 as there is no difference between $u$ and $v$. In the $(Z,\Pi)$
 space, the anisotropy index is shown in Fig. \ref{anisotropic_index}.
 Black dots indicate that jets have formed in the corresponding run,
-whereas gray triangles indicate there is no visually identifiable
+whereas gray triangles indicate that there is no visually identifiable
 jet in that run. Across the whole parameter space here, $Z$ is the
 dominant factor that shapes the overall behavior of the anisotropic
 index: $\chi$ increases monotonically from about 0.5 to near 1 when
 $Z$ increases from about 1.4 to 7.3. For the lowest $Z=1.4$, $\chi\approx0.5$
 confirms the flow to be in the friction-dominated regime as that would
 be predicted by the criterion $Z\apprle1.5$. Indeed, no jet or even
-slight hint of jet is seen in $Z=1.4$ runs. Flow in the friction-dominated
-regime seems not to be strongly dependent on $\Pi$ as seen from $\chi$
-here, as well as from the eddy diffusivity as will be discussed in
-Part II of this study \citep{Chai2016}.
+slight hint of jet is seen in any of $Z=1.4$ runs. Anistropy of the flow 
+seems not to be dependent on $\Pi$ in the range we 
+explored as seen from $\chi$ here, nor from the eddy 
+diffusivity as will be discussed in Part II of this study \citep{Chai2018b}.
 
 Jets start to form when $Z\apprge1.8$. For the two series of runs
 $Z=1.8$ and 2.4 within the transitional regime $1.5\apprle Z\apprle2.5$,
 $\Pi$ clearly influences the anisotropy of the flow as $\chi$ increases
 when $\Pi$ decreases. The influence of $\Pi$ on the formation and
-strength of the jet is seen more clearly from the vorticity and zonal
+strength of the jet is seen more intuitively from the vorticity and zonal
 velocity fields shown in Fig. \ref{vor_u_snapshot_drag1024e-4} (for
 $Z=1.8$) and \ref{vor_u_snapshot_drag256e-4} (for $Z=2.4$). Arguably,
 among $Z=1.8$ runs, visually identifiable jets are only seen in the
 run with the smallest $\Pi=1.5$. Though whether jets have formed
-or not in this run is objective, it is clear that the flow with $\Pi=1.5$
+or not in this run is subjective, it is clear that the flow with $\Pi=1.5$
 is much more anisotropic than the one with $\Pi=11.9$ (comparing
 Fig. \ref{vor_u_snapshot_drag1024e-4} top with bottom). For the larger
 $Z=2.4$, jets form in all runs (up to some debates for the run with
@@ -606,7 +597,7 @@ jet index $Z_{J}$ -- as an indicator of jet strength -- increases
 when $\Pi$ decreases. Quantitatively however, our theory predicts that
 such a dependency only exists when $\Pi<1$. In the simulations, the
 influence of $\Pi$ extends to a much greater extent than $\Pi<1$.
-Nevertheless, it is clear that the influence is especially strong
+Nevertheless, it is clear that the influence is stronger
 when $\Pi$ is closer to 1, and $\Pi$ gradually loses importance
 when it becomes larger than 4 (as seen in inset of Fig. \ref{anisotropic_index}
 and by visually examining the flows and the advected tracer fields).
@@ -981,7 +972,7 @@ $\omega_{t}$ and $|\omega_{\beta}|$ intersect (top) within the
 inverse energy cascade range or (bottom) within the direct enstrophy
 cascade range. The generalized turbulence-wave crossover wavenumber
 $k_{\beta}$ is given by either $k_{\varepsilon}$ or $k_{\eta}$
-depending on within which range $\omega_{e}$ and $|\omega_{\beta}|$ intersect.}
+depending on within which range $\omega_{t}$ and $|\omega_{\beta}|$ intersect.}
 \label{crossover_illustrate}
 \end{center}
 \end{figure}
@@ -991,7 +982,7 @@ depending on within which range $\omega_{e}$ and $|\omega_{\beta}|$ intersect.}
 \begin{center}
 \includegraphics[width=6in]{anisotropic_index}\caption{Anisotropy index defined as $\chi=\langle u^{2}/(u^{2}+v^{2})\rangle$
 in the $(Z,\Pi)$ space. The black dots indicate the runs in which
-jets have formed, whereas the gray triangles donate runs that have
+jets have formed, whereas the gray triangles indicate the runs that have
 no clear visually identifiable jets. The inset is a zoom-in of the
 region $Z\apprle2.5$.}
 \label{anisotropic_index}
