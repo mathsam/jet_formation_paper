@@ -555,9 +555,9 @@ is examined.
 
 To have an overview on what the anisotropy (or jet strength) looks
 like in the $(Z,\Pi)$ space, we define an anisotropy index $\chi$ as
-\[
+\begin{equation}
 \chi=\langle\frac{u^{2}}{u^{2}+v^{2}}\rangle,
-\]
+\end{equation}
 which measures the percentage of energy in the zonal wind. For
 isotropic turbulence, the anisotropy index $\chi$ should be 0.5
 as there is no difference between $u$ and $v$. In the $(Z,\Pi)$
@@ -651,21 +651,24 @@ are shown for a comparison. The universal constants are chosen as
 $\mathcal{C}_{K}=6$, $\mathcal{C'}_{K}=1.6$ and $\mathcal{C}_{Z}=0.5$
 as those reported in the literature \citep{Boffetta2012,Galperin2010}.
 
-For the runs with $\Pi=4.5$ and 2.3, the energy spectra roughly agree
-with the picture of the zonostrophic regime illustrated in Fig. \ref{EKE_KE_spectra_illustrate}.
-The total energy spectrum $\mathcal{E}(k)$ is very close to the EKE
-spectrum $\mathcal{E}_{eddy}(k)$ from the forcing wavenumber $k_{f}$
-to the crossover wavenumber $k_{\varepsilon}$, from where $\mathcal{E}(k)$
-steepens above $\mathcal{E}_{eddy}(k)$ at scales larger than the
-crossover scale $k_{\varepsilon}^{-1}$ due to the zonal modes. Between
-$k_{\varepsilon}$ and the energy halting wavenumber $k_{r}$ (about
-3$\sim$4), the zonal energy spectrum $\mathcal{E}_{\mathcal{Z}}(k)$
-roughly follows a -5 slope, although the theoretical universal spectrum
-(\ref{eq:zonostrophic_spectrum}) overestimates the energy level.
-The EKE spectrum $\mathcal{E}_{eddy}(k)$ roughly follows the theoretical
-isotropic inverse cascade spectrum (\ref{eq:Kolmogorov_Kraichnan_spectrum_energy})
-with the -5/3 slope from the forcing scale all the way to slightly
-less than the energy halting scale. In the enstrophy cascade range
+For the runs with $\Pi=4.5$ and 2.3, the energy spectra show some
+resemblance with the zonostrophic turbulence picture illustrated in 
+Fig. \ref{EKE_KE_spectra_illustrate}: (a) the EKE spectrum $\mathcal{E}_{eddy}(k)$ 
+roughly follows the theoretical isotropic inverse cascade spectrum (\ref{eq:Kolmogorov_Kraichnan_spectrum_energy}) with the -5/3 slope
+from the forcing scale all the way to slightly less than the energy
+halting scale, and (b) the zonal energy spectrum $\mathcal{E}_{Z}(k)$
+is much steeper than $\mathcal{E}_{eddy}(k)$ and roughly follows a -5 slope
+between the crossover scale to the energy halting scale. However, the theoretical
+universal spectrum (\ref{eq:zonostrophic_spectrum}) overestimates 
+the energy level of $\mathcal{E}_{Z}(k)$, which results in the zonal
+and eddy spectra to intersect at a scale larger than the crossover
+scale. 
+
+Instead, it appears robust that the total spectrum 
+$\mathcal{E}(k)$ start to steepen above $\mathcal{E}_{eddy}(k)$
+near the crossover scale even for runs with $\Pi=0.6$. This may confirm
+the relevance of crossover scale as the scale where Rossby waves
+start to become significant. In the enstrophy cascade range
 ($k>k_{f}$), the spectral slope is steeper than $-3$, which is probably
 due to a lack of resolution to resolve an extended enstrophy cascade
 range.
