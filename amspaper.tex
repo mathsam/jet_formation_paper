@@ -654,74 +654,65 @@ as those reported in the literature \citep{Boffetta2012,Galperin2010}.
 For the runs with $\Pi=4.5$ and 2.3, the energy spectra show some
 resemblance with the zonostrophic turbulence picture illustrated in 
 Fig. \ref{EKE_KE_spectra_illustrate}: (a) the EKE spectrum $\mathcal{E}_{eddy}(k)$ 
-roughly follows the theoretical isotropic inverse cascade spectrum (\ref{eq:Kolmogorov_Kraichnan_spectrum_energy}) with the -5/3 slope
+roughly follows the theoretical isotropic inverse cascade spectrum 
+(\ref{eq:Kolmogorov_Kraichnan_spectrum_energy}) with the -5/3 slope
 from the forcing scale all the way to slightly less than the energy
-halting scale, and (b) the zonal energy spectrum $\mathcal{E}_{Z}(k)$
+halting scale, and (b) the ZKE spectrum $\mathcal{E}_{Z}(k)$
 is much steeper than $\mathcal{E}_{eddy}(k)$ and roughly follows a -5 slope
 between the crossover scale to the energy halting scale. However, the theoretical
 universal spectrum (\ref{eq:zonostrophic_spectrum}) overestimates 
 the energy level of $\mathcal{E}_{Z}(k)$, which results in the zonal
 and eddy spectra to intersect at a scale larger than the crossover
-scale. 
+scale.
 
-Instead, it appears robust that the total spectrum 
-$\mathcal{E}(k)$ start to steepen above $\mathcal{E}_{eddy}(k)$
-near the crossover scale even for runs with $\Pi=0.6$. This may confirm
-the relevance of crossover scale as the scale where Rossby waves
-start to become significant. In the enstrophy cascade range
-($k>k_{f}$), the spectral slope is steeper than $-3$, which is probably
-due to a lack of resolution to resolve an extended enstrophy cascade
-range.
+When $\Pi$ decreases below 1 to $\Pi=0.6$, two significant changes
+are visible in the spectra. First, the inverse cascade spectrum of 
+isotropic turbulence with the $-5/3$ slope no longer exists but the EKE
+spectrum following the $-3$ slope extends from the enstrophy cascade 
+branch ($k>k_{f}$) all the way into the inverse cascade branch ($k_{r}<k<k_{f}$). 
+The $-3$ slope in the EKE spectrum confirms our scaling of turbulence
+frequency in (\ref{eq:eddy_turnover_freq_direct_enstrophy_cascade}) 
+for the enstrophy cascade branch is robust. The lack of $-5/3$ slope
+may suggest that the energy cascade is no longer local but is also 
+driven by the shear of the jets in a similar way as the enstrophy 
+non-local cascade as we discussed in the end of the Theory Section.
+Second, the scale where the total spectrum $\mathcal{E}(k)$ start to
+steepen above EKE spectrum moves from larger than the forcing scale to
+smaller than the forcing scale, and stays roughly close to the generalized
+crossover scale ($k_\varepsilon$ or $k_\ega$ in Fig. \ref{EKE_KE_spectra_illustrate}).
+This may confirm that the crossover scale moves to smaller than forcing
+scale for the case $\Pi<1$. Theoretically, we expect the ZKE spectrum 
+(\ref{eq:zonostrophic_spectrum}) with -5 slope may no longer hold 
+when $\Pi<1$. In practice, however, it is difficult to tell the 
+difference between the runs here. One reason is that there
+are only a couple of jets in the runs so that shape of ZKE spectrum,
+which describes the statistics of jets, cannot be resolved very accurately.
 
-When $\Pi$ decreases below 1 to $\Pi=0.6$, energy injected at $k_{f}$
-is still transfered to jets and eddies much larger than the forcing
-scale. For $k<k_{f}$, the slope of the EKE spectrum $\mathcal{E}_{eddy}(k)$
-is much steeper than -5/3 and is close to -3. The lack of an inverse
-cascade spectrum with $-5/3$ slope clearly differentiates the
-flow from zonostrophic turbulence. In the enstrophy cascade range
-($k>k_{f}$), the $\mathcal{E}_{eddy}(k)$ is close to but slightly
-steeper than -3 slope, which may suggest the need of a log-correction
-\citep{Kraichnan1971}. In the $\Pi<1$ regime, the generalized crossover
-wavenumber $k_{\beta}$ is given by $k_{\eta}$ in the enstrophy cascade
-range. The total spectrum $\mathcal{E}(k)$ is close to $\mathcal{E}_{eddy}(k)$
-for $k\apprge k_{\eta}$, but steepens above $\mathcal{E}_{eddy}(k)$
-for $k\apprle k_{\eta}$ due to energy in the zonal modes, which indicates
-the flow does become anisotropic near the generalized crossover scale.
-Theoretically, we expect the spectrum (\ref{eq:zonostrophic_spectrum})
-with -5 slope may become no longer universal when $\Pi\apprle1$.
-In practice, however, it is difficult to measure the slope of the
-zonal energy spectrum accurately as it is distributed as a series of
-peaks rather than a smooth curve.
-
-For $\Pi<1$, the flow lacks a near-isotropic inverse cascade range.
-Instead, eddies at the forcing scale are already influenced by the
-$\beta$-effect. What difference does this have on energy cascade?
-To answer this question, we resort to the spectral energy budget,
+For $\Pi<1$, the flow lacks a near-isotropic inverse cascade range as 
+suggested by the lack of $-5/3$ EKE spectrum slope. Instead, eddies at 
+the forcing scale are already influenced by the $\beta$-effect. What difference 
+does this have on energy cascade? To gain more insight, we resort to the spectral energy budget,
 which is obtained by multiplying $-\widetilde{\psi}_{\mathbf{k}}^{*}$
 to the Fourier transform of the vorticity equation (\ref{eq:barotropic_vorticity_eq})
 and then using the form of the energy spectrum in (\ref{eq:energy_spectrum_psi_zeta}).
 The spectral energy budget is
-
 \begin{equation}
 \frac{\partial\mathcal{E}(k)}{\partial t}=T(k)-\underset{|\mathbf{k}|=k}{\sum}\left\{ \psi\right\} _{\mathbf{k}}^{*}\left\{ \vartheta\right\} _{\mathbf{k}}-2r\mathcal{E}(k),
 \end{equation}
 where we neglect energy dissipation by hyperviscosity. The term $T(k)$
 is the nonlinear energy transfer into wavenumber $k$:
-
 \begin{equation}
 T(k)=\underset{|\mathbf{k}|=k}{\sum}\left\{ \psi\right\} _{\mathbf{k}}^{*}\left\{ J(\psi,\zeta)\right\} _{\mathbf{k}}.
 \end{equation}
-And the terms $-\Sigma_{|\mathbf{k}|=k}\left\{ \psi\right\} _{\mathbf{k}}^{*}\left\{ \vartheta\right\} _{\mathbf{k}}$
+The other terms $-\Sigma_{|\mathbf{k}|=k}\left\{ \psi\right\} _{\mathbf{k}}^{*}\left\{ \vartheta\right\} _{\mathbf{k}}$
 and $-2r\mathcal{E}(k)$ are forcing and dissipation respectively.
-We can decompose the flow into a sum of the eddy and zonal-mean as
-
-\[
+We can further decompose the flow into a sum of the eddy and zonal-mean as
+\begin{equation}
 \psi=\overline{\psi}+\psi',
-\]
+\end{equation}
 where the $\overline{A}$ denotes the zonal mean of $A$, and the
 $A'$ denotes the deviation from the zonal mean. The spectral EKE
 budget can be formulated as
-
 \begin{equation}
 \frac{\partial\mathcal{E}_{eddy}(k)}{\partial t}=T_{EE}(k)-T_{EM}^{e}(k)-\underset{|\mathbf{k}|=k}{\sum}\left\{ \psi'\right\} _{\mathbf{k}}^{*}\left\{ \vartheta'\right\} _{\mathbf{k}}-2r\mathcal{E}_{eddy}(k),\label{eq:spectral_EKE_budget}
 \end{equation}
@@ -730,24 +721,21 @@ where the eddy-eddy interaction is
 T_{EE}(k)=\underset{|\mathbf{k}|=k}{\sum}\left\{ \psi'\right\} _{\mathbf{k}}^{*}\left\{ J(\psi',\zeta')\right\} _{\mathbf{k}},
 \end{equation}
 and the eddy/mean-flow interaction is
-
 \begin{equation}
 T_{EM}^{e}(k)=-\underset{|\mathbf{k}|=k}{\sum}\left\{ \psi'\right\} _{\mathbf{k}}^{*}\left\{ \overline{u}\frac{\partial\zeta'}{\partial x}+v'\frac{\partial\overline{\zeta}}{\partial y}\right\} _{\mathbf{k}}.
 \end{equation}
 The spectral ZKE budget is
-
 \begin{equation}
 \frac{\partial\mathcal{E}_{\mathcal{Z}}(k)}{\partial t}=T_{EM}^{m}(k)-2r\mathcal{E}_{\mathcal{Z}}(k),\label{eq:spectral_ZKE_budget}
 \end{equation}
 where the eddy/mean-flow interaction is
-
 \begin{equation}
 T_{EM}^{m}(k)=\underset{|\mathbf{k}|=k}{\sum}\left\{ \overline{\psi}\right\} _{\mathbf{k}}^{*}\left\{ \overline{J(\psi',\zeta')}\right\} _{\mathbf{k}}.
 \end{equation}
-The eddy/mean-flow interaction terms take different forms in the EKE
-and ZKE spectral budgets: $T_{EM}^{e}(k)$ means the rate of energy
-transfer out of eddies of wavenumber $k$, and $T_{EM}^{m}(k)$ is
-energy transfer rate into the zonal flow of wavenumber $k$. Integrated
+Note that the eddy/mean-flow interaction terms take different forms in the EKE
+and ZKE spectral budgets: $T_{EM}^{e}(k)$ is the rate of energy
+transferring out of eddies at wavenumber $k$, and $T_{EM}^{m}(k)$ is
+energy transfer rate into the zonal flow at wavenumber $k$. Integrated
 over all wavenumbers, $\int T_{EM}^{e}(k)dk$ equals $\int T_{EM}^{m}(k)dk$.
 However, $T_{EM}^{e}(k)$ can have a broad distribution over a range
 of scales while $T_{EM}^{m}(k)$ may narrowly peak at the Rhines wavenumber.
