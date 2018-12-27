@@ -573,7 +573,7 @@ be predicted by the criterion $Z\apprle1.5$. Indeed, no jet or even
 slight hint of jet is seen in any of $Z=1.4$ runs. Anistropy of the flow 
 seems not to be dependent on $\Pi$ in the range we 
 explored as seen from $\chi$ here, nor from the eddy 
-diffusivity as will be discussed in Part II of this study \citep{Chai2018b}.
+diffusivity as will be discussed in Part II of this study \citep{Chai2019b}.
 
 Jets start to form when $Z\apprge1.8$. For the two series of runs
 $Z=1.8$ and 2.4 within the transitional regime $1.5\apprle Z\apprle2.5$,
@@ -655,10 +655,10 @@ For the runs with $\Pi=4.5$ and 2.3, the energy spectra show some
 resemblance with the zonostrophic turbulence picture illustrated in 
 Fig. \ref{EKE_KE_spectra_illustrate}: (a) the EKE spectrum $\mathcal{E}_{eddy}(k)$ 
 roughly follows the theoretical isotropic inverse cascade spectrum 
-(\ref{eq:Kolmogorov_Kraichnan_spectrum_energy}) with the -5/3 slope
+(\ref{eq:Kolmogorov_Kraichnan_spectrum_energy}) with -5/3 slope
 from the forcing scale all the way to slightly less than the energy
 halting scale, and (b) the ZKE spectrum $\mathcal{E}_{Z}(k)$
-is much steeper than $\mathcal{E}_{eddy}(k)$ and roughly follows a -5 slope
+is much steeper than $\mathcal{E}_{eddy}(k)$ and roughly follows -5 slope
 between the crossover scale to the energy halting scale. However, the theoretical
 universal spectrum (\ref{eq:zonostrophic_spectrum}) overestimates 
 the energy level of $\mathcal{E}_{Z}(k)$, which results in the zonal
@@ -667,29 +667,28 @@ scale.
 
 When $\Pi$ decreases below 1 to $\Pi=0.6$, two significant changes
 are visible in the spectra. First, the inverse cascade spectrum of 
-isotropic turbulence with the $-5/3$ slope no longer exists but the EKE
-spectrum following the $-3$ slope extends from the enstrophy cascade 
-branch ($k>k_{f}$) all the way into the inverse cascade branch ($k_{r}<k<k_{f}$). 
-The $-3$ slope in the EKE spectrum confirms our scaling of turbulence
+isotropic turbulence with $-5/3$ slope ceases to exist but the EKE
+spectrum follows close to $-3$ slope in the inverse cascade branch 
+($k_{r}<k<k_{f}$) as it is in the  enstrophy cascade branch ($k>k_{f}$). 
+The theoretical enstrophy cascade spectrum in (\ref{eq:Kolmogorov_Kraichnan_spectrum_enstrophy})
+aggrees well with observed EKE spectrum, which confirms our scaling of turbulence
 frequency in (\ref{eq:eddy_turnover_freq_direct_enstrophy_cascade}) 
-for the enstrophy cascade branch is robust. The lack of $-5/3$ slope
-may suggest that the energy cascade is no longer local but is also 
-driven by the shear of the jets in a similar way as the enstrophy 
-non-local cascade as we discussed in the end of the Theory Section.
+is robust for $\Pi<1$. One possiblity to explain why the EKE spectrum 
+in the energy cascade branch becomes similar to that in the enstrophy
+cascade branch is that the energy cascade is no longer local but is also 
+driven by the shear of jets in a similar way as the enstrophy 
+non-local cascade, which we will see more evidence later.
 Second, the scale where the total spectrum $\mathcal{E}(k)$ start to
 steepen above EKE spectrum moves from larger than the forcing scale to
 smaller than the forcing scale, and stays roughly close to the generalized
-crossover scale ($k_\varepsilon$ or $k_\ega$ in Fig. \ref{EKE_KE_spectra_illustrate}).
-This may confirm that the crossover scale moves to smaller than forcing
-scale for the case $\Pi<1$. Theoretically, we expect the ZKE spectrum 
-(\ref{eq:zonostrophic_spectrum}) with -5 slope may no longer hold 
-when $\Pi<1$. In practice, however, it is difficult to tell the 
-difference between the runs here. One reason is that there
-are only a couple of jets in the runs so that shape of ZKE spectrum,
-which describes the statistics of jets, cannot be resolved very accurately.
+crossover scale ($k_\varepsilon$ or $k_\eta$ in Fig. \ref{E_EKE_ZKE_spectrum_drag8e-4}).
+This may confirm that the crossover scale becomes smaller than forcing
+scale when $\Pi<1$. For the runs here, the slope of ZKE spectrum
+cannot be measured very accurately because there are only a couple of 
+jets in the runs.
 
-For $\Pi<1$, the flow lacks a near-isotropic inverse cascade range as 
-suggested by the lack of $-5/3$ EKE spectrum slope. Instead, eddies at 
+For $\Pi<1$, the flow lacks the classic inverse cascade range as 
+suggested by the absence of $-5/3$ EKE spectrum slope. Instead, eddies at 
 the forcing scale are already influenced by the $\beta$-effect. What difference 
 does this have on energy cascade? To gain more insight, we resort to the spectral energy budget,
 which is obtained by multiplying $-\widetilde{\psi}_{\mathbf{k}}^{*}$
@@ -738,18 +737,16 @@ transferring out of eddies at wavenumber $k$, and $T_{EM}^{m}(k)$ is
 energy transfer rate into the zonal flow at wavenumber $k$. Integrated
 over all wavenumbers, $\int T_{EM}^{e}(k)dk$ equals $\int T_{EM}^{m}(k)dk$.
 However, $T_{EM}^{e}(k)$ can have a broad distribution over a range
-of scales while $T_{EM}^{m}(k)$ may narrowly peak at the Rhines wavenumber.
+of scales while $T_{EM}^{m}(k)$ may narrowly peak at the jet scale.
 Physically, this means that eddy-mean transfer is non-local.
 
 Energy flux across a wavenumber $k$ for the total flow can be defined
 as
-
 \begin{equation}
 F(k)=\int_{k}^{\infty}T(k')dk'.\label{eq:energy_flux}
 \end{equation}
 Similarly, we can define energy flux due to eddy-eddy interactions
 and that due to eddy/mean-flow interactions as
-
 \begin{eqnarray}
 F_{EE}(k) & = & \int_{k}^{\infty}T_{EE}(k')dk',\label{eq:energy_flux_EE}\\
 F_{EM}(k) & = & \int_{k}^{\infty}\left[-T_{EM}^{e}(k')+T_{EM}^{m}(k')\right]dk'.
@@ -765,40 +762,42 @@ negligible at scales smaller than the energy halting scale. However,
 the partition of energy transfer between eddy-eddy and eddy/mean-flow
 interactions changes drastically when $\Pi$ reduces from 4.5 to 0.6.
 For the largest $\Pi=4.5$, eddy-eddy flux $F_{EE}(k)$ dominates
-over eddy/mean-flow flux $F_{EM}(k)$ before the inverse cascade reaches
+the upscale energy cascade before it reaches around
 the crossover scale $k_{\varepsilon}^{-1}$, beyond which eddy/mean-flow
-flux dominates. This is consistent with the zonostrophic turbulence
+flux $F_{EM}(k)$ dominates. This is consistent with the zonostrophic turbulence
 picture in which a near-isotropic inverse cascade is assumed between
-$k_{f}$ and $k_{\varepsilon}$. Though here the $F_{EM}(k)$ within
+$k_{f}$ and $k_{\varepsilon}$. Though here $F_{EM}(k)$ between
 $k_{\varepsilon}$ and $k_{f}$ is far from negligible, indicating
 that a perfect zonostrophic picture may only be reached for even larger
-$\Pi$. When $\Pi$ decreases, eddy/mean-flow transfer $F_{EM}(k)$
-gradually becomes more and more dominating. For $\Pi=0.6$, the eddy-eddy
-flux $F_{EE}(k)$ becomes negligible. Therefore, the upscale energy
+$\Pi$. When $\Pi$ decreases, $F_{EM}(k)$ gradually becomes more 
+and more dominating. For $\Pi=0.6$, the eddy-eddy
+flux $F_{EE}(k)$ becomes negligible, and thus the upscale energy
 flux is overwhelmingly dominated by eddy/mean-flow interactions.
 
-To see the scales where the energy gets channeled into the jets, the
-detailed spectral EKE and ZKE budgets are shown in Fig. \ref{EKE_ZKE_spectral_budget_drag8e-4}.
+To see the scales where energy gets channeled into jets, the nonlinear 
+energy transfer terms in (\ref{eq:spectral_EKE_budget}) and 
+(\ref{eq:spectral_ZKE_budget}) are shown in Fig. \ref{EKE_ZKE_spectral_budget_drag8e-4}.
 For $\Pi=4.5$, in the EKE budget the energy cascades to larger scales
-via eddy-eddy interactions. Within a wide range of scales $5\apprle k\apprle70$,
-EKE is channeled into jets. The fact that eddies much smaller
+via eddy-eddy interactions as seen from $T_{EE}$. Within a wide range 
+of scales $5\apprle k\apprle70$, EKE is channeled into jets as seen
+from $T^e_{EM}$. The fact that eddies much smaller
 than the crossover scale $k_{\varepsilon}^{-1}$ still transfer their
 energy into jets may indicate that $k_{\varepsilon}$ should
 be the boundary where the $\beta$-effect has become significant rather where it
 starts to take effect. It is likely that within $k_{\varepsilon}\apprle k\apprle70$,
 the eddies behave as a duality of isotropic eddies and Rossby waves.
-In the ZKE budget, energy transfer into jets $T_{EM}^{M}$ sharply
-peaks at wavenumber 4, which coincides with the number of jets. The
+In the ZKE budget, energy transfer into jets $T_{EM}^{m}$ peaks
+sharply at wavenumber 4, which coincides with the number of jets. The
 EKE and ZKE spectra together shows a nonlocal transfer of energy from
-eddies of a wide range of scales directly into the largest scale jets.
+eddies over a wide range of scales directly into jets at the largest scale.
 For $\Pi=0.6$, the EKE budget looks widely different. Energy is directly
 transfered from eddies into the mean flow at the forcing scale. Although
 eddies larger than the forcing scale have a higher energy level (Fig.
 \ref{E_EKE_ZKE_spectrum_drag8e-4}), their energy transfer into the
 jets is negligible compared with that by eddies at the forcing scale.
-Therefore, the injected energy is directly transfered into the zonal
-jets, and it is then dissipated by friction as seen from the ZKE budget
-in Fig. \ref{EKE_ZKE_spectral_budget_drag8e-4} (bottom). 
+The energy cycle is simply that the injected energy gets directly 
+channeled into the zonal jets, and it is then dissipated by friction
+at jet scale as seen from Fig. \ref{EKE_ZKE_spectral_budget_drag8e-4} (bottom). 
 
 For the runs with $Z=3.2$, the above discussions are largely the
 same. The spectral enstrophy budget is also calculated. It shows a
@@ -810,7 +809,7 @@ forcing and friction. The initial condition is the time and zonal mean
 flow from the $Z=4.8$ and $\Pi=0.6$ run with a small-amplitude eddy
 perturbation. The instantaneous eddy vorticity fields $\zeta'$ at
 time $t=0$, 0.78 and 1.56 are shown in Fig. \ref{initial_value_run}.
-At $t=0$, the eddy vorticity field shows the perturbation to the
+At $t=0$, the eddy vorticity field shows the initial perturbation to the
 mean zonal flow. The perturbation is uniformly distributed within
 wavenumber ring $14\leq k\leq18$, which resembles a ``pulse'' of
 forcing. At $t=0.78$, eddies are tilted and elongated by the shear
@@ -818,8 +817,8 @@ of the jets, which clearly transfers enstrophy to smaller scales in the
 $y$-direction. As the circulation of an eddy is conserved while it
 is being elongated, the velocity of the eddy must reduce, and therefore
 eddy kinetic energy is transfered into the jet \citep{Kraichnan1976}.
-At $t=1.56$, the whole eddy seems to smear into the jet and eventually
-gets destroyed by hyperviscosity, though almost no energy is dissipated
+At $t=1.56$, the whole eddy smears into the jet and eventually
+gets destroyed by hyperviscosity, although almost no energy is dissipated
 by hyperviscosity. This picture closely resembles the vortex thinning
 mechanism discussed by \citet{Manz2009}. In this physical space picture,
 the role of the $\beta$-effect is only implicit as jets with strong shear
@@ -837,8 +836,8 @@ interactions are negligible. Therefore, we expect the statistical
 properties of the flow in this regime to be well captured in the ``quasi-linear''
 model, in which with eddy-eddy interactions are removed but the eddy/mean-flow
 interactions are retained \citep{O'Gorman2007,Tobias2013}. We carry
-out a series of quasi-linear simulations with $Z=3.2$ and $\Pi$
-varying from about 0.5 to 8. Indeed, when $\Pi=0.5$ the jets in the
+out a series of quasi-linear simulations with $Z=3.2$, and vary $\Pi$
+from about 0.5 to 8. Indeed, when $\Pi=0.5$ the jets in the
 quasi-linear model have similar scale as in the full nonlinear
 model. When $\Pi$ increases, the jet scale changes little in the
 full nonlinear model but keeps decreasing in the quasi-linear model.
