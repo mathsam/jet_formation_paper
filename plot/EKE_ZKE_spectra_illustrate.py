@@ -1,6 +1,6 @@
 import matplotlib
 font = {'size': 18,
-        'family':'sans-serif','sans-serif':['Helvetica']}
+        'family':'sans-serif','sans-serif':['Calibri']}
 
 matplotlib.rc('font', **font)
 matplotlib.rc('lines', linewidth=2)
@@ -39,14 +39,14 @@ plt.plot([k_beta-0.82, k_beta-0.82], [EKE[k_beta-1], 1e-3], '--k')
 plt.plot([k_f, k_f], [EKE[k_f], 1e-3], '--k')
 
 fontsize_text = 16
-fontsize_legend = 18
+fontsize_legend = 18 
 plt.text(k_Rh-0.5, 5e-4, r'$k_{r}\approx k_{Rh}$',fontsize=fontsize_text)
 plt.text(k_beta, 5e-4, r'$k_\varepsilon$',fontsize=fontsize_text)
 plt.text(k_f, 5e-4, r'$k_{f}$',fontsize=fontsize_text)
 plt.text(8, 8e-1, r'$\beta^{2}k^{-5}$', color='red',fontsize=fontsize_text, rotation=-60)
 plt.text(22, 4e-2, r'$\varepsilon^{2/3}k^{-5/3}$', color='blue',fontsize=fontsize_text, rotation=-30)
 plt.text(82, 3e-3, r'$\eta^{2/3}k^{-3}$', color='blue',fontsize=fontsize_text, rotation=-50)
-plt.legend(loc='upper right',frameon=False,fontsize=fontsize_text)
+plt.legend(loc='upper right',frameon=False,fontsize=fontsize_legend)
 plt.xlabel('$k$')
 plt.ylabel(r'$\mathcal{E}(k)$')
 plt.setp( plt.gca().get_xticklabels(), visible=False)
