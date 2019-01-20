@@ -294,27 +294,25 @@ its relevance for observed geophysical flows.
 
 \section{Theory}
 
-In this section, we follow the way \citet{Vallis1993} used to derive 
+In this section, we follow the derivation of \citet{Vallis1993} for
 the classical turbulence-wave crossover scale but generalize it
-to work for the case $\Pi<1$. First consider scalings in a 2d flow forced
-at wavenumber $k_{f}$ based on phenomenology of isotropic turbulence. 
+for the case $\Pi<1$. First consider scalings in a 2d flow forced
+at wavenumber $k_{f}$ based on the phenomenology of isotropic turbulence. 
 Energy inversely cascades to larger scales and
-enstrophy directly cascades to smaller scales. The inverse of eddy
+enstrophy directly cascades to smaller scales. The inverse of the eddy
 turnover time defines a strain rate, or ``turbulence frequency''
-$\omega_{t}$, consisting of two branches: an inverse energy cascade
-branch for $k<k_{f}$ and a direct enstrophy cascade branch for $k>k_{f}$.
-From dimensional analysis, the turbulence frequency in the inverse
-energy cascade branch is
+$\omega_{t}$. From dimensional analysis, the turbulence frequency in 
+the inverse energy cascade branch ($k<k_f$) is
 \begin{equation}
 \omega_{t}=\mathcal{C}_{\omega,\varepsilon}\varepsilon^{1/3}k^{2/3},\label{eq:eddy_turnover_freq_inverse_cascade}
 \end{equation}
-and in the direct enstrophy cascade branch is
+and in the direct enstrophy cascade branch ($k>k_f$) is
 \begin{equation}
 \omega_{t}=\mathcal{C}_{\omega,\eta}\eta^{1/3},\label{eq:eddy_turnover_freq_direct_enstrophy_cascade}
 \end{equation}
 where $\mathcal{C}_{\omega,\varepsilon}$ and $\mathcal{C}_{\omega,\eta}$
-are universal constants. If the forcing scale is well localized, enstrophy
-flux is related to energy flux by
+are nondimensional universal constants. If the forcing scale is 
+well localized, the enstrophy flux is related to the energy flux by
 \begin{equation}
 \eta=k_{f}^{2}\varepsilon.\label{eq:energy_enstrophy_flux_relationship}
 \end{equation}
@@ -333,12 +331,12 @@ k_{f}^{2/3}, & k>k_{f}
 \end{equation}
 which is a monotonic nondecreasing function with $k$.
 
-The well-known Rossby wave frequency is 
+The Rossby wave frequency is 
 \begin{equation}
 \omega_{\beta}=-\frac{\beta k_{x}}{k^{2}}.\label{eq:Rossby_wave_freq_kx_k}
 \end{equation}
 As the crossover scale is at the isotropic turbulence boundary, we
-take $k_{x}\sim k$ and get the magnitude of Rossby wave frequency as
+take $k_{x}\sim k$ and get the magnitude of the Rossby wave frequency as
 \begin{equation}
 |\omega_{\beta}|\simeq\frac{\beta}{k}.\label{eq:Rossby_wave_freq_k}
 \end{equation}
@@ -360,21 +358,20 @@ in terms of $k_\varepsilon$ and $\Pi$ as
 \begin{equation}
 k_{\eta}=\Pi^{-2/3}k_{\varepsilon}.\label{eq:k_eta_k_epsilon_relation}
 \end{equation}
-Now for both energy and enstrophy cascade range, the generalized crossover wavenumber
-can be summarized as
+The generalized crossover wavenumber can thus be summarized as
 \begin{equation}
 k_{\beta}=\max(k_{\varepsilon},k_{\eta})=k_{\varepsilon}\max(1,\Pi^{-2/3}),\label{eq:generalized_crossover_wavenumber}
 \end{equation}
-where $\max(x,y)$ returns the larger one out of $x$ and $y$. 
+where $\max(x,y)$ returns the larger of $x$ and $y$. 
 
-The range of of scales influenced by the $\beta$-effect determines
-how anisotropic the flow is. When $\Pi<1$, the classical scaling
+The range of scales influenced by the $\beta$-effect determines
+how anisotropic the flow is. When $\Pi<1$, 
 $k_{\varepsilon}$ underestimates the generalized crossover wavenumber.
 In this case, the zonostrophic index $Z$ underestimates the range
-of scales under $\beta$-effect and thus should underestimate the anisotropy
+of scales influenced by the $\beta$-effect and thus should underestimate the anisotropy
 of the flow. Using the generalized crossover wavenumber $k_{\beta}$,
 we may define a ``jet index'' to properly measure the width of the
-range of scales under $\beta$-effect as
+range of scales influenced by the $\beta$-effect as
 
 \begin{equation}
 Z_{J}=\frac{k_{\beta}}{k_{Rh}}=\max(1,\Pi^{-2/3})Z.\label{eq:jet index}
@@ -447,15 +444,15 @@ More details on the model is described in \citet{Smith2002}.
 
 Ignoring the dependency on the exact form of the random forcing 
 ($\delta k_f$, decorrelation time scale, etc.), Eq.
-(\ref{eq:barotropic_vorticity_eq}) is fully characterized by 4 non-dimensional
+(\ref{eq:barotropic_vorticity_eq}) is fully characterized by 4 nondimensional
 numbers constructed from \{$\varepsilon$,$\beta$,$r$,$k_{f}$,$L$,$\nu$\},
 where $L$ is the size of the domain. Suppose that the energy has
 not reached domain size so that $L$ does not matter, and that the
 enstrophy is dissipated at a small enough scale so that hyperviscosity
 $\nu$, which determines the exact scale of enstrophy dissipation,
 does not matter. Under these assumptions, the system is fully characterized
-by 2 non-dimensional numbers constructed from \{$\varepsilon$,$\beta$,$r$,$k_{f}$\}.
-As mentioned in the introduction, the two non-dimensional numbers
+by 2 nondimensional numbers constructed from \{$\varepsilon$,$\beta$,$r$,$k_{f}$\}.
+As mentioned in the introduction, the two nondimensional numbers
 are chosen to be the zonostrophic index 
 \begin{equation}
 Z=k_{\varepsilon}/k_{Rh},\label{eq:zono_idx_estimate}
