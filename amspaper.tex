@@ -75,7 +75,7 @@
 % Enter your Abstract here
 
 \abstract{Turbulence regimes are examined in forced-dissipative, two-dimensional
-flow on $\beta$-plane with emphasis on jet formation. 
+flow on a $\beta$-plane with emphasis on jet formation. 
 The anisotropy of the flow is known to be largely determined
 by the zonostrophic index $Z$, which is the ratio of the Rhines scale to
 the turbulence-wave crossover scale. In this study, it is shown that the
@@ -84,14 +84,14 @@ comparable to or even larger than the crossover scale. The role of forcing scale
 is characterized by a nondimensional number $\Pi$, which is the ratio of 
 the classical crossover scale to the forcing scale.
 Turbulence regimes are explored in $(Z,\Pi)$ space with numerical simulations. 
-When $1.5\apprle Z\apprle2.5$, both $Z$ and $\Pi$ influence jet formation: 
+When $1.5\apprle Z\apprle2.5$, both $Z$ and $\Pi$ appear to influence jet formation: 
 jets are stronger and easier to form for smaller $\Pi$. This behavior is understood
 from a new form of crossover scale proposed for $\Pi<1$, which shows
-that a wider range of scales is under $\beta$-effect than prediction from $Z$ alone.
-When $Z\apprge2.5$, the flow is dominated by strong jets and has 
-previously been characterized as the zonostrophic turbulence regime for 
-$\Pi\apprge4$. When $\Pi$ decreases, the flow gradually transits into 
-a new turbulence regime at $\Pi\apprle1$. 
+that a wider range of scales is under $\beta$-effect than would be 
+predicted from $Z$ alone. When $Z\apprge2.5$ and $\Pi\apprge4$, the flow is 
+in the previously characterized zonostrophic turbulence regime, 
+featuring strong jets. When $\Pi$ decreases, the jets become even sharper
+and the flow gradually transits into a new turbulence regime at $\Pi\apprle1$. 
 This regime is ``quasi-linear'' in the sense that eddy-eddy interactions
 are negligible while eddy/mean-flow interactions dominate the nonlinear
 energy and enstrophy transfers. The relevance of the quasi-linear regime
@@ -111,7 +111,7 @@ for Earth's atmosphere and oceans.}
 %
 \section{Introduction}
 
-Planetary rotation profoundly determines the macroturbulence in the
+Planetary rotation profoundly affects the macroturbulence in the
 atmosphere and ocean, distinguishing it from the flows at much smaller
 scales in two different ways. First, the large scale flow is in near
 geostrophic balance due to the rotation. Therefore macroturbulence
@@ -121,17 +121,18 @@ predictability \citep{Leith1971,Leith1972}, and tracer transport/mixing
 \citep{Batchelor1959,Shuckburgh2003} from its three-dimensional counterpart.
 Second, the differential rotation on a sphere, or $\beta$-effect,
 introduces anisotropy to the flow. As a result, zonal jets spontaneously
-form, and the flow is rather an interplay of turbulence, Rossby waves
+form, and the flow becomes controlled by an interplay of turbulence, Rossby waves
 and jets. Arguably, the simplest idealization to study the macroturbulence
 with both effects of planetary rotation is a forced-dissipated two-dimensional
 (2d) flow on a $\beta$-plane. This idealization contains the complexity
 of nonlinear interactions, yet it is fully determined by a handful
 of factors: forcing, dissipation (of both energy and enstrophy) and
-$\beta$-effect. In this idealized setting, it is promising to chart
+$\beta$-effect. In this idealized setting, we can chart
 different turbulent regimes using a few nondimensional numbers.
 These turbulent regimes have their correspondence in the real geophysical
 flows, as well as in models with increased complexity. Understanding
-these regimes will be a first step towards a general circulation theory.
+these regimes provide an important step towards a generalized theory 
+of macroturbulent circulations on Earth and other planets.
 
 One nondimensional number that is well-known to determine the anisotropy
 of the flow is the ratio between two length scales: the Rhines scale
@@ -146,10 +147,10 @@ under debate since it has been proposed. In some studies, rms velocity
 of the eddies or the meridional wind has been used, while the Rhines scale itself
 has been used as an estimate for either eddy scale, jet scale, or
 the scale where energy gets channeled into jets \citep{Williams1978,Jansen2012,Chai2014,Liu2015,Chemke2015}.
-Here we choose the form and meaning that are consistent 
-with the zonostrophic turbulence.}
+Here we choose the form and meaning that is most consistent 
+with the theory of zonostrophic turbulence.}
 The turbulence-wave crossover scale marks the transition from
-isotropic eddies to Rossby waves, which in term of wavenumber is
+isotropic eddies to Rossby waves, which in terms of wavenumber is
 \begin{equation}
     k_{\varepsilon}=\mathcal{C}_{\varepsilon}\beta^{3/5}\varepsilon^{-1/5},\label{eq:classical_crossover_wavenumber}
 \end{equation}
@@ -181,21 +182,21 @@ is dominated by strong zonal jets. The friction-dominated
 regime is close to isotropic turbulence as the inverse energy cascade
 is halted by friction before reaching the crossover scale.
 
-Quantitatively, the energy spectra of eddies and zonal flow for the
-zonostrophic turbulence, as 
+Quantitatively, the energy spectra of eddies (defined here as deviations
+from the zonal mean) and zonal flow for zonostrophic turbulence, as 
 illustrated in Fig. \ref{EKE_KE_spectra_illustrate}, further
-explain how the zonostrophic index $Z$ set the anisotropy of the flow. 
+explain how the zonostrophic index $Z$ sets the anisotropy of the flow. 
 Let the 2d flow be stirred by a spectrally localized forcing at a (high) wavenumber $k_{f}$.
-The eddies keep the same the energy spectrum as the isotropic turbulence,
-with an energy inverse cascade branch ($k<k_f$) as 
+The eddies have the same energy spectrum as in isotropic turbulence,
+with an inverse energy cascade range for $k<k_f$ where
 \begin{equation}
     \mathcal{E}(k)=\mathcal{C}_K\varepsilon^{2/3}k^{-5/3},\label{eq:Kolmogorov_Kraichnan_spectrum_energy}
 \end{equation}
-and a steeper enstrophy direct cascade branch ($k>k_f$) as
+and a steeper direct enstrophy cascade range for $k>k_f$, where
 \begin{equation}
-    \mathcal{E}(k)=\mathcal{C'}_K\eta^{2/3}k^{-3},\label{eq:Kolmogorov_Kraichnan_spectrum_enstrophy}
+    \mathcal{E}(k)=\mathcal{C'}_K\eta^{2/3}k^{-3}.\label{eq:Kolmogorov_Kraichnan_spectrum_enstrophy}
 \end{equation}
-where $\varepsilon$ and $\eta$ are the upscale energy and downscale enstrophy
+Here $\varepsilon$ and $\eta$ are the upscale energy and downscale enstrophy
 fluxes respectively; $\mathcal{C}_K$ and $\mathcal{C'}_K$ 
 are the Kolmogorov constants of about $6\sim7$ and $1.3\sim1.6$ respectively
 \citep{Maltrud1991,Smith1993,Paret1997,Chen2006,Borue1993,Gotoh1998}.
@@ -206,25 +207,28 @@ by $\beta$ and wavenumber as
 \mathcal{E}_{Z}(k)=\mathcal{C}_Z\beta^{2}k^{-5},\ k_{x}=0,\label{eq:zonostrophic_spectrum}
 \end{equation}
 where $k_{x}$ is the zonal wavenumber, and the constant $\mathcal{C}_Z$
-is found to be about 0.5 \citep{Sukoriansky2002,Smith2002,Galperin2010}.
-Such spectrum has been observed in many numerical simulations 
+is uncertain but roughly about 0.2$\sim$0.5 \citep{Sukoriansky2002,Galperin2010,Smith2005}.
+Indications for such spectrum have been observed in many numerical simulations 
 \citep{Chekhlov1996,Smith2002,Huang2001,Sukoriansky2002,Sukoriansky2007},
-more or less in the Jovian atmosphere \citep{Sukoriansky2002,Choi2011,Galperin2014}
+in the Jovian atmosphere \citep{Sukoriansky2002,Choi2011,Galperin2014}
 and even in high-resolution ocean simulations \citep{Galperin2004}.
 Zonal and eddy energy spectra intersect at the crossover wavenumber $k_{\varepsilon}$.
-Eventually, friction comes into effect and halts the energy cascade at jet scale $k_r^{-1}$,
-which is close to the Rhines scale as mentioned before.\footnote{
+Eventually, friction comes into effect and halts the energy 
+cascade at the jet scale $k_r^{-1}$,
+which is related to the Rhines scale as mentioned before.\footnote{
 The zonal spectrum (\ref{eq:zonostrophic_spectrum})
-also lays Rhines scale on a quantitative ground, as by assuming
-most energy is in the jets and an integration of (\ref{eq:zonostrophic_spectrum}) 
-from $k_{r}$ to $\infty$ we can get $k_{r}\simeq1.2k_{Rh}$.}
+also lays Rhines scale on a quantitative ground: assuming
+that most energy is in the jets, an integration of (\ref{eq:zonostrophic_spectrum}) 
+from $k_{r}$ to $\infty$ gives total energy as $\mathcal{C}_Z\beta^{2}k_{r}^{-4}/4$,
+and then using $\mathcal{C}_Z\sim 0.5$ and (\ref{eq:Rhines_wavenumber_beta_Urms})
+we can get $k_{r}\simeq k_{Rh}$.}
 As the zonal energy spectrum (\ref{eq:zonostrophic_spectrum}) 
-contains much more energy than eddy energy spectrum 
+contains much more energy than the eddy energy spectrum 
 (\ref{eq:Kolmogorov_Kraichnan_spectrum_energy}) for $k<k_\varepsilon$,
 jets dominate the flow when $Z$ is large.
 
 The above zonostrophic turbulence picture and the derivation of
-crossover scale in (\ref{eq:classical_crossover_wavenumber}) assume
+the crossover scale in (\ref{eq:classical_crossover_wavenumber}) assume
 that the forcing scale is much smaller than the crossover scale so that
 there exists an extended inverse cascade range in between.
 The details of the forcing, including the forcing scale,
@@ -237,27 +241,28 @@ energy flux across scale $l$ involves
 the thinning of subscale eddies 4 to 8 times smaller than $l$ by
 the strain at $l$ \citep{Chen2006}.
 The condition $k_{f}/k_{\varepsilon}\apprge4$, however, 
-is not satisfied in the Earth's atmosphere \citep{Schneider2006,Merlis2009}
+is not satisfied in Earth's atmosphere \citep{Schneider2006,Merlis2009}
 and oceans \citep{Tulloch2011}. In this case, the details of
 forcing may not be negligible. Furthermore, literature 
-on potential vorticity (PV) staircase hints that
-forcing scale itself can play an important role 
-in jet formation especially when it is comparable to the crossover scale.
-PV staircase has long been hypothesized
-as a model for jet formation, which is the limiting case that PV is
+on potential vorticity (PV) staircases hints at the fact that
+the forcing scale itself can play an important role 
+in jet formation especially when it is comparable to the crossover scale \citep{Scott2012}.
+The PV staircase has long been hypothesized as a model for jet formation.
+In its ideal limit, the PV staircase implies that PV is
 perfectly mixed between jets while having distinct jumps at the center
 of jets \citep{Marcus1993,Marcus1998,Dunkerton2008,Dritschel2008}.
-The flow with a near-perfect PV staircase structure has been 
+A flow with a near-perfect PV staircase structure has been 
 simulated by \citet{Scott2012}, who suggest the very high
 zonostrophic index as the key to obtain the PV staircase. 
-Although dominated by strong jets as the zonostrophic turbulence,
-a perfect PV staircase has a shallower spectrum slope than
-(\ref{eq:zonostrophic_spectrum}) as a mathematical fact \citep{Saffman1971,Danilov2004}.
-This suggests that the PV staircase may not exactly in the zonostrophic
-regime despite having very high zonostrophic index.
-Examining their experiment setup, our calculation suggests that 
-$k_{f}/k_{\varepsilon}<1$ may be the additional criterion
-to reach the PV staircase regime.\footnote{
+Although dominated by strong jets in zonostrophic turbulence,
+a perfect PV staircase has a shallower spectral slope than
+(\ref{eq:zonostrophic_spectrum}) as follows directly from the
+relationship between the PV and flow field \citep{Saffman1971,Danilov2004}.
+This suggests that the PV staircase may not represent the zonostrophic
+regime despite having very high zonostrophic index. In fact,
+examining the setup of \citet{Scott2012} suggests that 
+$k_{f}/k_{\varepsilon}<1$, indicating that a relative large forcing
+scale may be an additional requirement to reach the PV staircase regime.\footnote{
 In a later study, \citet{Scott2012a} suggest that PV staircase can
 easily form when the forcing scale is as large as the jet scale and
 $k_{f}/k_{\varepsilon}\apprle1/6$, which is more extreme than the
@@ -273,16 +278,18 @@ flow. From the above discussion, the ratio
 \end{equation}
 suggests itself as an important nondimensional number to characterize
 the role of the forcing scale. When $\Pi<1$, the crossover scale $k_{\varepsilon}^{-1}$
-is now within the direct enstrophy cascade range and therefore formulation
-of turbulence-wave crossover scale in (\ref{eq:classical_crossover_wavenumber})
-should no longer hold. This paper is organized
-as followings. In section 2, we derive a new crossover scale in the
+is now within the direct enstrophy cascade range and therefore the formulation
+of the turbulence-wave crossover scale in (\ref{eq:classical_crossover_wavenumber})
+should no longer hold. 
+
+This paper is organized
+as follow. In section 2, we derive a new crossover scale in the
 enstrophy cascade branch for $\Pi<1$. In section 3, a set of experiments
 varying both $\Pi$ and $Z$ are carried out. Experiment results are
-analyzed in section 4, which are understood using turbulent phenomenology
+analyzed in section 4 using turbulent phenomenology
 and our new crossover scale. In section 5, we conclude with an updated
-chart for turbulence regimes in the ($Z$, $\Pi$) space and discuss
-its relevance with the observed geophysical flows.
+chart for turbulence regimes in ($Z$, $\Pi$) space and discuss
+its relevance for observed geophysical flows.
 
 
 \section{Theory}
