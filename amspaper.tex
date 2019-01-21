@@ -549,8 +549,8 @@ is examined.
 
 \subsection*{a. Jet formation boundary ($Z\apprle2.5$)}
 
-To have an overview on what the anisotropy (or jet strength) looks
-like in the $(Z,\Pi)$ space, we define an anisotropy index $\chi$ as
+As a metric for the anisotropy (or jet strength)
+in the $(Z,\Pi)$ space, we define an anisotropy index $\chi$ as
 \begin{equation}
 \chi=\langle\frac{u^{2}}{u^{2}+v^{2}}\rangle,
 \end{equation}
@@ -564,26 +564,25 @@ jet in that run. Across the whole parameter space here, $Z$ is the
 dominant factor that shapes the overall behavior of the anisotropic
 index: $\chi$ increases monotonically from about 0.5 to near 1 when
 $Z$ increases from about 1.4 to 7.3. For the lowest $Z=1.4$, $\chi\approx0.5$
-confirms the flow to be in the friction-dominated regime as that would
+confirms the flow to be in the friction-dominated regime as would
 be predicted by the criterion $Z\apprle1.5$. Indeed, no jet or even
-slight hint of jet is seen in any of $Z=1.4$ runs. Anisotropy of the flow 
+slight hint of jet is seen in any of the $Z=1.4$ runs. Anisotropy of the flow 
 seems not to be dependent on $\Pi$ in the range we 
-explored as seen from $\chi$ here, nor from the eddy 
-diffusivity as will be discussed in Part II of this study \citep{Chai2019b}.
+explored as seen from $\chi$ here.
 
 Jets start to form when $Z\apprge1.8$. For the two series of runs
 $Z=1.8$ and 2.4 within the transitional regime $1.5\apprle Z\apprle2.5$,
-$\Pi$ clearly influences the anisotropy of the flow as $\chi$ increases
-when $\Pi$ decreases. The influence of $\Pi$ on the formation and
+$\Pi$ clearly influences the anisotropy of the flow with $\chi$ increasing
+as $\Pi$ decreases. The influence of $\Pi$ on the formation and
 strength of the jet is seen more intuitively from the vorticity and zonal
 velocity fields shown in Fig. \ref{vor_u_snapshot_drag1024e-4} (for
 $Z=1.8$) and \ref{vor_u_snapshot_drag256e-4} (for $Z=2.4$). Arguably,
-among $Z=1.8$ runs, visually identifiable jets are only seen in the
+among the $Z=1.8$ runs, visually identifiable jets are only seen in the
 run with the smallest $\Pi=1.5$. Though whether jets have formed
 or not in this run is subjective, it is clear that the flow with $\Pi=1.5$
 is much more anisotropic than the one with $\Pi=11.9$ (comparing
 Fig. \ref{vor_u_snapshot_drag1024e-4} top with bottom). For the larger
-$Z=2.4$, jets form in all runs (up to some debates for the run with
+$Z=2.4$, jets form in all runs (up to some debate for the run with
 $\Pi=9.0$), but are stronger and more coherent when $\Pi$ is
 smaller. Therefore, we conclude that not only the zonostrophic index
 $Z$ but also $\Pi$ determines the boundary for jet formation, as
@@ -596,30 +595,30 @@ influence of $\Pi$ extends to a much greater extent than $\Pi<1$.
 Nevertheless, it is clear that the influence is stronger
 when $\Pi$ is closer to 1, and $\Pi$ gradually loses importance
 when it becomes larger than 4 (as seen in inset of Fig. \ref{anisotropic_index}
-and by visually examining the flows and the advected tracer fields).
+and by visually examining the flows).
 The observed larger extent of influence than $\Pi<1$ is hardly a
 surprise. As we mentioned in the introduction, the inverse energy cascade
 must at least extend to 4 times of the forcing scale in order for
 the forcing scale to lose its influence \citep{Chen2006}. Therefore,
 we expect $\Pi$ to influence jet formation as far as $\Pi\apprle4$
-but to gradually lose importance when $\Pi$ increases above 4.
+but to gradually lose importance when $\Pi$ increases above $\sim 4$.
 
 
 \subsection*{b. From zonostrophic to ``quasi-linear'' turbulence ($Z\apprge2.5$)}
 
-The condition for zonostrophic turbulence is $Z\apprge2.5$ and $\Pi\apprge4$
+The condition for zonostrophic turbulence is that $Z\apprge2.5$ and $\Pi\apprge4$
 \citep{Sukoriansky2007,Galperin2010}. In our simulations with $Z=4.8$,
 $\Pi$ varies from about 0.6 to 4.5. As seen from vorticity and zonal
-wind fields in Fig. \ref{vor_u_snapshot_drag8e-4}, the jets are coherent
-and strong for all values of $\Pi$. Still, for smaller $\Pi<1$,
-the jets are even sharper than those in the zonostrophic turbulence
-regime with $\Pi=4.5$, consistent with prediction from the jet index
-$Z_{J}$. More importantly, when $\Pi<1$ the generalized crossover
+wind fields in Fig. \ref{vor_u_snapshot_drag8e-4}, the jets are
+strong for all values of $\Pi$. Still, for smaller $\Pi\apprle 1$,
+the jets are even sharper and more coherent than those in the zonostrophic turbulence
+regime with $\Pi=4.5$, qualitatively consistent with the prediction
+that the jet index $Z_{J}$ is increased for small $\Pi$. 
+More importantly, when $\Pi<1$ the generalized crossover
 scale $k_{\beta}^{-1}$ is smaller than the forcing scale so we may expect
-$\Pi<1$ to be in a new turbulence regime with a different picture of
+$\Pi<1$ to be in a new turbulence regime with a qualitative different
 energy cascade than the zonostrophic regime. In the following, we
-focus on characterizing and understanding this regime in the spectral
-space.
+focus on characterizing and understanding this regime in spectral space.
 
 The kinetic energy spectrum can be evaluated as
 \begin{equation}
@@ -654,39 +653,30 @@ roughly follows the theoretical isotropic inverse cascade spectrum
 (\ref{eq:Kolmogorov_Kraichnan_spectrum_energy}) with -5/3 slope
 from the forcing scale all the way to slightly less than the energy
 halting scale, and (b) the ZKE spectrum $\mathcal{E}_{Z}(k)$
-is much steeper than $\mathcal{E}_{eddy}(k)$ and roughly follows -5 slope
-between the crossover scale to the energy halting scale. However, the theoretical
+is much steeper than $\mathcal{E}_{eddy}(k)$ and is roughly consistent with a -5 slope
+between the crossover scale and the energy halting scale. However, the theoretical
 universal spectrum (\ref{eq:zonostrophic_spectrum}) overestimates 
 the energy level of $\mathcal{E}_{Z}(k)$, which results in the zonal
-and eddy spectra to intersect at a scale larger than the crossover
-scale.
-
-When $\Pi$ decreases below 1 to $\Pi=0.6$, two significant changes
-are visible in the spectra. First, the inverse cascade spectrum of 
-isotropic turbulence with $-5/3$ slope ceases to exist but the EKE
-spectrum follows close to $-3$ slope in the inverse cascade branch 
-($k_{r}<k<k_{f}$) as it is in the  enstrophy cascade branch ($k>k_{f}$). 
-The theoretical enstrophy cascade spectrum in (\ref{eq:Kolmogorov_Kraichnan_spectrum_enstrophy})
-agrees well with observed EKE spectrum, which confirms our scaling of turbulence
-frequency in (\ref{eq:eddy_turnover_freq_direct_enstrophy_cascade}) 
-is robust for $\Pi<1$. One possibility to explain why the EKE spectrum 
-in the energy cascade branch becomes similar to that in the enstrophy
-cascade branch is that the energy cascade is no longer local but is also 
-driven by the shear of jets in a similar way as the enstrophy 
-non-local cascade, which we will see more evidence later.
-Second, the scale where the total spectrum $\mathcal{E}(k)$ start to
-steepen above EKE spectrum moves from larger than the forcing scale to
-smaller than the forcing scale, and stays roughly close to the generalized
-crossover scale ($k_\varepsilon$ or $k_\eta$ in Fig. \ref{E_EKE_ZKE_spectrum_drag8e-4}).
-This may confirm that the crossover scale becomes smaller than forcing
-scale when $\Pi<1$. For the runs here, the slope of ZKE spectrum
+and eddy spectra to intersect at a scale larger than the predicted
+crossover scale. Notice that for the runs here, the slope of ZKE spectrum
 cannot be measured very accurately because there are only a couple of 
 jets in the runs.
 
+When $\Pi$ decreases below 1 to $\Pi=0.6$, two significant changes are 
+visible in the spectra. First, the classical inverse cascade spectrum 
+with $-5/3$ slope disappears but the EKE spectrum follows $-3$ slope 
+in both the inverse cascade branch ($k<k_{f}$) and the  enstrophy cascade branch ($k>k_{f}$). Second, the scale where the total spectrum $\mathcal{E}(k)$ starts to
+steepen above the EKE spectrum moves from scales larger than the forcing scale to
+smaller than the forcing scale, while staying roughly close to the generalized
+crossover scale ($k_\varepsilon$ or $k_\eta$ in Fig. \ref{E_EKE_ZKE_spectrum_drag8e-4}).
+This is consistent with the expectation that the crossover scale 
+becomes smaller than forcing scale when $\Pi<1$. 
+
 For $\Pi<1$, the flow lacks the classic inverse cascade range as 
-suggested by the absence of $-5/3$ EKE spectrum slope. Instead, eddies at 
-the forcing scale are already influenced by the $\beta$-effect. What difference 
-does this have on energy cascade? To gain more insight, we resort to the spectral energy budget,
+suggested by the absence of a $-5/3$ EKE spectrum slope. Instead, eddies at 
+the forcing scale are already influenced by the $\beta$-effect. What effect 
+does this have on the energy cascade? To gain more insight, 
+we resort to the spectral energy budget, 
 which is obtained by multiplying $-\widetilde{\psi}_{\mathbf{k}}^{*}$
 to the Fourier transform of the vorticity equation (\ref{eq:barotropic_vorticity_eq})
 and then using the form of the energy spectrum in (\ref{eq:energy_spectrum_psi_zeta}).
@@ -700,14 +690,14 @@ is the nonlinear energy transfer into wavenumber $k$:
 T(k)=\underset{|\mathbf{k}|=k}{\sum}\left\{ \psi\right\} _{\mathbf{k}}^{*}\left\{ J(\psi,\zeta)\right\} _{\mathbf{k}}.
 \end{equation}
 The other terms $-\Sigma_{|\mathbf{k}|=k}\left\{ \psi\right\} _{\mathbf{k}}^{*}\left\{ \vartheta\right\} _{\mathbf{k}}$
-and $-2r\mathcal{E}(k)$ are forcing and dissipation respectively.
-We can further decompose the flow into a sum of the eddy and zonal-mean as
+and $-2r\mathcal{E}(k)$ are forcing and dissipation, respectively.
+We can further decompose the flow into a sum of the eddy and zonal-mean contributions as
 \begin{equation}
 \psi=\overline{\psi}+\psi',
 \end{equation}
-where the $\overline{A}$ denotes the zonal mean of $A$, and the
+where $\overline{A}$ denotes the zonal mean of $A$, and 
 $A'$ denotes the deviation from the zonal mean. The spectral EKE
-budget can be formulated as
+budget can then be formulated as
 \begin{equation}
 \frac{\partial\mathcal{E}_{eddy}(k)}{\partial t}=T_{EE}(k)-T_{EM}^{e}(k)-\underset{|\mathbf{k}|=k}{\sum}\left\{ \psi'\right\} _{\mathbf{k}}^{*}\left\{ \vartheta'\right\} _{\mathbf{k}}-2r\mathcal{E}_{eddy}(k),\label{eq:spectral_EKE_budget}
 \end{equation}
@@ -742,7 +732,7 @@ as
 F(k)=\int_{k}^{\infty}T(k')dk'.\label{eq:energy_flux}
 \end{equation}
 Similarly, we can define energy flux due to eddy-eddy interactions
-and that due to eddy/mean-flow interactions as
+and due to eddy/mean-flow interactions as
 \begin{eqnarray}
 F_{EE}(k) & = & \int_{k}^{\infty}T_{EE}(k')dk',\label{eq:energy_flux_EE}\\
 F_{EM}(k) & = & \int_{k}^{\infty}\left[-T_{EM}^{e}(k')+T_{EM}^{m}(k')\right]dk'.
@@ -753,12 +743,12 @@ $F_{EM}(k)$ normalized by $\varepsilon$ are shown in Fig. \ref{energy_flux_drag8
 for various $\Pi$. The energy flux of the total flow $F(k)$ looks
 similar for different $\Pi$: a robust upscale energy transfer from
 the forcing wavenumber $k_{f}$ to the energy halting wavenumber with
-nearly a constant rate, which means that frictional dissipation is
+a nearly constant rate, which means that frictional dissipation is
 negligible at scales smaller than the energy halting scale. However,
 the partition of energy transfer between eddy-eddy and eddy/mean-flow
 interactions changes drastically when $\Pi$ reduces from 4.5 to 0.6.
 For the largest $\Pi=4.5$, eddy-eddy flux $F_{EE}(k)$ dominates
-the upscale energy cascade before it reaches around
+the upscale energy cascade before it reaches roughly
 the crossover scale $k_{\varepsilon}^{-1}$, beyond which eddy/mean-flow
 flux $F_{EM}(k)$ dominates. This is consistent with the zonostrophic turbulence
 picture in which a near-isotropic inverse cascade is assumed between
@@ -766,25 +756,25 @@ $k_{f}$ and $k_{\varepsilon}$. Though here $F_{EM}(k)$ between
 $k_{\varepsilon}$ and $k_{f}$ is far from negligible, indicating
 that a perfect zonostrophic picture may only be reached for even larger
 $\Pi$. When $\Pi$ decreases, $F_{EM}(k)$ gradually becomes more 
-and more dominating. For $\Pi=0.6$, the eddy-eddy
+and more dominant. For $\Pi=0.6$, the eddy-eddy
 flux $F_{EE}(k)$ becomes negligible, and thus the upscale energy
 flux is overwhelmingly dominated by eddy/mean-flow interactions.
 
-To see the scales where energy gets channeled into jets, the nonlinear 
+To identify the scales where energy gets channeled into jets, the nonlinear 
 energy transfer terms in (\ref{eq:spectral_EKE_budget}) and 
 (\ref{eq:spectral_ZKE_budget}) are shown in Fig. \ref{EKE_ZKE_spectral_budget_drag8e-4}.
-For $\Pi=4.5$, in the EKE budget the energy cascades to larger scales
-via eddy-eddy interactions as seen from $T_{EE}$. Within a wide range 
-of scales $5\apprle k\apprle70$, EKE is channeled into jets as seen
-from $T^e_{EM}$. The fact that eddies much smaller
+For $\Pi=4.5$, the EKE budget shows that the energy cascades to larger scales
+via eddy-eddy interactions ($T_{EE}$). Within a wide range 
+of scales $5\apprle k\apprle70$, EKE is then channeled into jets 
+($T^e_{EM}$). The fact that eddies much smaller
 than the crossover scale $k_{\varepsilon}^{-1}$ still transfer their
-energy into jets may indicate that $k_{\varepsilon}$ should
-be the boundary where the $\beta$-effect has become significant rather where it
+energy into jets indicates that $k_{\varepsilon}$ should
+be viewed as the boundary where the $\beta$-effect has become significant rather where it
 starts to take effect. It is likely that within $k_{\varepsilon}\apprle k\apprle70$,
 the eddies behave as a duality of isotropic eddies and Rossby waves.
 In the ZKE budget, energy transfer into jets $T_{EM}^{m}$ peaks
 sharply at wavenumber 4, which coincides with the number of jets. The
-EKE and ZKE spectra together shows a nonlocal transfer of energy from
+EKE and ZKE spectra together show a nonlocal transfer of energy from
 eddies over a wide range of scales directly into jets at the largest scale.
 For $\Pi=0.6$, the EKE budget looks widely different. Energy is directly
 transfered from eddies into the mean flow at the forcing scale. Although
@@ -793,22 +783,23 @@ eddies larger than the forcing scale have a higher energy level (Fig.
 jets is negligible compared with that by eddies at the forcing scale.
 The energy cycle is simply that the injected energy gets directly 
 channeled into the zonal jets, and it is then dissipated by friction
-at jet scale as seen from Fig. \ref{EKE_ZKE_spectral_budget_drag8e-4} (bottom). 
+at the jet scale, as seen from Fig. \ref{EKE_ZKE_spectral_budget_drag8e-4} (bottom). 
 
-For the runs with $Z=3.2$, the above discussions are largely the
-same. The spectral enstrophy budget is also calculated. It shows a
-similar picture to the spectral energy budget, that eddy/mean-flow
-interactions dominate downscale enstrophy transfer in the regime $\Pi<1$.
+The spectral enstrophy budget shows a similar picture to the 
+spectral energy budget, that eddy/mean-flow 
+interactions dominate downscale enstrophy transfer in the regime $\Pi\apprle 1$.
+For the runs with $Z=3.2$, the above discussions are largely the same. 
+
 To get an impression of how the non-local transfer happens, we carry
 out an initial-value run with similar parameters to $Z=4.8$ but without
 forcing and friction. The initial condition is the time and zonal mean
 flow from the $Z=4.8$ and $\Pi=0.6$ run with a small-amplitude eddy
-perturbation. The instantaneous eddy vorticity fields $\zeta'$ at
+perturbation. The perturbation is uniformly distributed within
+wavenumber ring $14\leq k\leq18$, which resembles a ``pulse'' of
+forcing from the forced-dissipated run. The instantaneous eddy vorticity fields $\zeta'$ at
 time $t=0$, 0.78 and 1.56 are shown in Fig. \ref{initial_value_run}.
 At $t=0$, the eddy vorticity field shows the initial perturbation to the
-mean zonal flow. The perturbation is uniformly distributed within
-wavenumber ring $14\leq k\leq18$, which resembles a ``pulse'' of
-forcing. At $t=0.78$, eddies are tilted and elongated by the shear
+mean zonal flow. At $t=0.78$, eddies are tilted and elongated by the shear
 of the jets, which clearly transfers enstrophy to smaller scales in the
 $y$-direction. As the circulation of an eddy is conserved while it
 is being elongated, the velocity of the eddy must reduce, and therefore
@@ -817,58 +808,61 @@ At $t=1.56$, the whole eddy smears into the jet and eventually
 gets destroyed by hyperviscosity, although almost no energy is dissipated
 by hyperviscosity. This picture closely resembles the vortex thinning
 mechanism discussed by \citet{Manz2009}. In this physical space picture,
-the role of the $\beta$-effect is only implicit as jets with strong shear
-cannot spontaneously form without $\beta$-effect. The role of the $\beta$-effect
-together with the shear of the jets is seen more explicitly in the
-spectrum space. \citet{Gurcan2012} shows that the shear further weakens
-the already weak resonance interactions between Rossby waves, thus
-making energy transfer into jets even more favored.
+the role of $\beta$-effect is only implicit as jets with strong shear
+cannot spontaneously form without $\beta$-effect. In the
+spectral space, the roles of both $\beta$-effect and jet shear are explicit: 
+wave/mean-flow interaction that arises from $\beta$-effect transfers 
+energy into jets, and \citet{Gurcan2012} shows that the shear further 
+weakens the already weak wave-wave interactions, thus making energy 
+transfer into jets even more favored.
 
 We conclude that for relatively large zonostrophic index $Z\apprge2.5$,
 a new regime exists for $\Pi\apprle1$, which is different from the
 zonostrophic turbulence ($\Pi\apprge4$). In this regime, eddy/mean-flow
 interactions dominate in energy and enstrophy transfers, whereas eddy-eddy
 interactions are negligible. Therefore, we expect the statistical
-properties of the flow in this regime to be well captured in the ``quasi-linear''
-model, in which with eddy-eddy interactions are removed but the eddy/mean-flow
-interactions are retained \citep{O'Gorman2007,Tobias2013}. We carry
-out a series of quasi-linear simulations with $Z=3.2$, and vary $\Pi$
-from about 0.5 to 8. Indeed, when $\Pi=0.5$ the jets in the
+properties of the flow in this regime to be well captured by a ``quasi-linear''
+model, in which with eddy-eddy interactions are removed but eddy/mean-flow
+interactions are retained \citep{O'Gorman2007,Tobias2013}. We confirmed this 
+with a series of quasi-linear simulations with $Z=3.2$, and varying $\Pi$
+from about 0.5 to 8 (not shown). When $\Pi=0.5$ the jets in the
 quasi-linear model have similar scale as in the full nonlinear
 model. When $\Pi$ increases, the jet scale changes little in the
 full nonlinear model but keeps decreasing in the quasi-linear model.
-At sufficiently large $\Pi=8$, no clear jet is seen in the quasi-linear
-model. Therefore, we shall refer the regime $\Pi\apprle1$ and $Z\apprge2.5$
-as the ``quasi-linear'' turbulence.
+At sufficiently large $\Pi$, no clear jet is seen in the quasi-linear
+model. Therefore, we will refer to the regime $\Pi\apprle1$ and $Z\apprge2.5$
+as ``quasi-linear'' turbulence.
 
 
 \subsection*{c. Potential vorticity staircase ($Z\apprge7.3$)}
 
-As mentioned in the introduction, we predict that the potential vorticity
-(PV) staircase should only be reached when $\Pi\apprle4$. Otherwise,
-the spectrum in the zonal modes should follow the universal $k^{-5}$
-spectrum rather than the $k^{-4}$ spectrum of a perfect PV staircase.
-For the simulations with $Z=7.3$, $\Pi$ varies from 0.4 to 1.5.
+As mentioned in the introduction, we predict that small $\Pi$ may be
+important to obtain PV staircase in \citeauthor{Scott2012}'s (2012) simulations.
+For the simulations with $Z=7.3$, we consider $\Pi$ varying from 0.4 to 1.5.
 Time and zonal mean potential vorticity fields $q=\zeta+\beta y$
 from these simulations are shown in Fig. \ref{PV_vs_y_drag1e-4}.
-The smallest $\Pi=0.4$ run resembles the PV staircase: PV is nearly
-perfectly mixed at some latitudinal bands separated by sharp jumps
-at the center of jets. Though this run has almost the same parameters as \citet{Scott2012},
-our staircase structure is less perfect compared to theirs, which may
-require additional time to reach due to the extremely low mixing.
-Such staircase structure is much less clear in the $\Pi=1.5$ run.
+The smallest $\Pi=0.4$ run most closely approaches the PV staircase: 
+PV is nearly perfectly mixed at some latitudinal bands 
+separated by sharp jumps at the center of jets. 
+The staircase structure is much less clear in the $\Pi=1.5$ run.
 Although at some latitudes there is a PV jump, there is not a wide
 region with near perfectly mixed PV. Instead, in most regions away from
-the jet center where the PV jump is, the PV gradient is similar to the
-planetary vorticity gradient $\beta$. Therefore, we narrow the boundary
-for PV staircase formation to $\Pi\apprle1$. At such a high zonostrophic
-index, jets are very strong in all three runs. Still, jets
-are even sharper in the smallest $\Pi=0.4$ run.
+the jet center where the PV jump occurs, the PV gradient is similar to the
+planetary vorticity gradient $\beta$. At such a high zonostrophic index, 
+jets are very strong in all three runs. Still, jets are even sharper 
+in the smallest $\Pi=0.4$ run. If we assume the existence
+of universal ZKE spectrum (\ref{eq:zonostrophic_spectrum}) for large $Z$
+and $\Pi\apprge 4$, we may conclude that the PV staircase only forms 
+when $\Pi\apprle4$. However, such a $k^{-5}$ spectrum is not clear
+in our simulations. Nevertheless, we think that PV staircase 
+is most likely to form for small $\Pi$, perhaps in the corner of $\Pi\apprle1$,
+although we cannot rule out its possibility to form for large $\Pi$ and
+extremely large $Z$, which is virtually impossible to simulate.
 
 
 \section{Discussion and conclusion}
 
-An updated chart for regimes of $\beta$-plane turbulence is shown
+An updated qualitative chart for regimes of $\beta$-plane turbulence is shown
 in Fig. \ref{regime_illustration}, guided by our theory and simulations.
 Now the boundary that determines whether jets form or not is not a
 straight vertical line $Z=Z_{c}$, but rather a curve determined by
@@ -879,9 +873,10 @@ $\Pi$, especially if $\Pi$ is close to or smaller than 1. The influence
 of $\Pi$ on jet formation may be understood from the generalized crossover scale
 in the enstrophy cascade range that we proposed. For $\Pi<1$, the
 crossover scale $k_{\eta}^{-1}$ is smaller than the forcing scale,
-and $k_{\eta}^{-1}$ becomes even smaller if $\Pi$ further reduces,
+and $k_{\eta}^{-1}$ becomes even smaller if $\Pi$ is further reduced,
 which indicates that a wider range of scales are influenced by the $\beta$-effect.
-For $Z\apprge2.5$, the zonostrophic turbulence regime is at $\Pi\apprge4$.
+For $Z\apprge2.5$ and $\Pi\apprge 4$, we recover the traditional 
+zonostrophic turbulence regime.
 In this regime, the inverse energy cascade first proceeds from the
 forcing scale to larger scales by eddy-eddy interactions as isotropic
 turbulence with a characteristic $k^{-5/3}$ energy spectrum. After
@@ -894,10 +889,10 @@ scale is directly transferred into the jets at the largest scale, whereas
 eddy-eddy interactions are negligible in the energy cascade. The isotropic
 energy cascade spectrum $k^{-5/3}$ is not seen but is replace by
 a nearly $k^{-3}$ spectrum similar to the enstrophy cascade spectrum
-even at the energy cascade range. For the same $Z$, the jets are 
+at all scales. For the same $Z$, the jets are 
 even sharper when $\Pi$ reduces to below 1. The PV staircase 
-structure can form in the corner of the ``quasi-linear'' regime 
-where the zonostrophic index is very high ($Z\apprge7$).
+structure may be found in the corner of the ``quasi-linear'' 
+regime where the zonostrophic index is very high ($Z\apprge7$).
 
 It is tempting to put the observed geophysical flows into our updated
 chart of turbulence regimes. \citet{Galperin2004} argue that the
@@ -908,7 +903,7 @@ We can estimate $\Pi$ in order to put these flows into the $(Z,\Pi)$
 space. In Earth's atmosphere, the EKE generation rate is about
 2 W m$^{-2}$ \citep{Peixoto1984,Li2007}, which translates into $\varepsilon\sim2\times10^{-4}$
 m$^{2}$ s$^{-2}$. Using the value of $\beta$ at midlatitudes, the
-crossover scale of the energy cascade branch is about $k_{\varepsilon}^{-1}\sim700$
+classical crossover scale $k_{\varepsilon}^{-1}$ is about $700$
 km. The typical deformation radius is about 1000 km. As eddy kinetic
 energy is generated at a scale similar to or even larger than the deformation
 radius \citep{Chai2014}, Earth's atmosphere is likely to be within
