@@ -682,7 +682,7 @@ to the Fourier transform of the vorticity equation (\ref{eq:barotropic_vorticity
 and then using the form of the energy spectrum in (\ref{eq:energy_spectrum_psi_zeta}).
 The spectral energy budget is
 \begin{equation}
-\frac{\partial\mathcal{E}(k)}{\partial t}=T(k)-\underset{|\mathbf{k}|=k}{\sum}\left\{ \psi\right\} _{\mathbf{k}}^{*}\left\{ \vartheta\right\} _{\mathbf{k}}-2r\mathcal{E}(k),
+\frac{\partial\mathcal{E}(k)}{\partial t}=T(k)-\underset{|\mathbf{k}|=k}{\sum}\left\{ \psi\right\} _{\mathbf{k}}^{*}\left\{ \vartheta\right\} _{\mathbf{k}}-2r\mathcal{E}(k),\label{eq:spectral_energy_budget}
 \end{equation}
 where we neglect energy dissipation by hyperviscosity. The term $T(k)$
 is the nonlinear energy transfer into wavenumber $k$:
@@ -735,7 +735,7 @@ Similarly, we can define energy flux due to eddy-eddy interactions
 and due to eddy/mean-flow interactions as
 \begin{eqnarray}
 F_{EE}(k) & = & \int_{k}^{\infty}T_{EE}(k')dk',\label{eq:energy_flux_EE}\\
-F_{EM}(k) & = & \int_{k}^{\infty}\left[-T_{EM}^{e}(k')+T_{EM}^{m}(k')\right]dk'.
+F_{EM}(k) & = & \int_{k}^{\infty}\left[-T_{EM}^{e}(k')+T_{EM}^{m}(k')\right]dk'.\label{eq:energy_flux_EM}
 \end{eqnarray}
 A positive (negative) $F$ means there is a net downscale (upscale)
 energy transfer across $k$. Energy fluxes $F(k)$, $F_{EE}(k)$ and
@@ -785,10 +785,22 @@ The energy cycle is simply that the injected energy gets directly
 channeled into the zonal jets, and it is then dissipated by friction
 at the jet scale, as seen from Fig. \ref{EKE_ZKE_spectral_budget_drag8e-4} (bottom). 
 
-The spectral enstrophy budget shows a similar picture to the 
-spectral energy budget, that eddy/mean-flow 
-interactions dominate downscale enstrophy transfer in the regime $\Pi\apprle 1$.
-For the runs with $Z=3.2$, the above discussions are largely the same. 
+As the enstrophy spectrum is related to the energy spectrum by
+\begin{equation}
+    \Omega(k)= \frac{1}{2}\underset{|\mathbf{k}|=k}{\sum}|\left\{ \zeta\right\} _{\mathbf{k}}|^{2} = k^2 \mathcal{E}(k),
+\end{equation}
+the spectral enstrophy budget and its decompositions can be simply
+obtained by multiplying $k^2$ to their energy counterparts.
+For example, enstrophy flux across a wavenumber $k$ and its decomposition 
+into contributions from eddy-eddy and eddy/mean-flow interactions are 
+obtained by multiplying $k'^2$ to the nonlinear transfer terms $T(k')$ 
+in Eqs. (\ref{eq:energy_flux}), (\ref{eq:energy_flux_EE}) and (\ref{eq:energy_flux_EM});
+and they are shown in Fig. (\ref{enstrophy_flux_drag8e-4}) after being 
+normalized by the total enstrophy dissipation. The spectral enstrophy
+budget shows a similar picture to the spectral energy budget 
+that eddy/mean-flow interactions dominate downscale 
+enstrophy transfer in the regime $\Pi\apprle 1$. For the runs with $Z=3.2$, 
+the above discussions are largely the same. 
 
 To get an impression of how the non-local transfer happens, we carry
 out an initial-value run with similar parameters to $Z=4.8$ but without
@@ -908,21 +920,29 @@ km. The typical deformation radius is about 1000 km. As eddy kinetic
 energy is generated at a scale similar to or even larger than the deformation
 radius \citep{Chai2014}, Earth's atmosphere is likely to be within
 the $\Pi\apprle1$ regime. Another evidence is that many features
-of the general circulation are recovered in the quasi-linearized model
+of the general circulation, including the mean flow and the EKE spectum, 
+are recovered in the quasi-linearized model
 so that the atmosphere may lie close to the ``quasi-linear'' regime
 \citep{O'Gorman2007}. For the ocean, it is hard to estimate $\varepsilon$
-and thus $k_{\varepsilon}$. However, the kinetic energy spectrum
-from high-resolution ocean simulation shows that the energy spectrum
-seems to follow the -5/3 slope before the inverse cascade reaches
-the crossover scale, from where the spectrum steepens to -5 slope
-(see Fig. 2 from \citeauthor{Galperin2004} {[}2004{]}). This spectrum
-agrees with the zonostrophic turbulence picture so that $\Pi$ is likely to
-be a larger than 1. Otherwise for $\Pi<1$, the EKE spectrum should
-instead follow a -3 slope as seen in Fig. \ref{E_EKE_ZKE_spectrum_drag8e-4}.
-Based on the forcing scale relative to the turbulence-wave crossover
-scale, we may understand the ocean dynamics to be more nonlinear than
-that of the atmosphere. 
+and thus $k_{\varepsilon}$. However, observational and simulational
+evidence suggest that the eddy-eddy interactions to be important in
+transferring energy upscale, especially in the Antarctic Circumpolar 
+Current region \citep{Scott2005,Tulloch2011}. This may suggests the
+ocean to be away from the ``quasi-linear'' regime with a higher $\Pi$ 
+than the atmosphere. The ocean being more non-linear may result from
+its higher criticality \citep{Jansen2012}.
 
+
+\acknowledgments
+We thank Isaac Held for helpful comments and discussions. We also thank
+Shafer Smith, Antoine Venaille and Geoffrey Vallis for providing the 
+numerical model.  The numerical simulations were
+performed on GFDL’s computer system. This work was
+funded by the NSF under Grant *** and the
+NOAA under Grant ***. The statements, findings, conclusions, and recommendations are
+those of the authors and do not necessarily reflect the
+views of the NSF, the NOAA, or the U.S. Department
+of Commerce.
 
  \bibliographystyle{ametsoc2014}
  \bibliography{references}
@@ -1035,6 +1055,13 @@ red line.}
 4.5 and (bottom) 0.6. The formulation for these budgets are given
 in (\ref{eq:EKE_spec_psi}) and (\ref{eq:spectral_ZKE_budget}).}
 \label{EKE_ZKE_spectral_budget_drag8e-4}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=6in]{enstrophy_flux_drag8e-4}\caption{Similar to Fig. (\ref{energy_flux_drag8e-4}) but for enstrophy flux.}
+\label{enstrophy_flux_drag8e-4}
 \end{center}
 \end{figure}
 
