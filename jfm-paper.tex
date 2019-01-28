@@ -48,8 +48,7 @@ When $1.5\apprle Z\apprle2.5$, both $Z$ and $\Pi$ appear to influence jet format
 jets are stronger and easier to form for smaller $\Pi$. This behavior is understood
 from a new form of the crossover scale proposed for $\Pi<1$, which shows
 that a wider range of scales is under $\beta$-effect than would be 
-predicted from $Z$ alone. When $Z\apprge2.5$ jets always form, but the nature of the
-flow remains strongly affected by the magnitude of Pi. For $\Pi\apprge4$, the flow is 
+predicted from $Z$ alone. When $Z\apprge2.5$ and $\Pi\apprge4$, the flow is 
 in the previously characterized zonostrophic turbulence regime, 
 featuring strong jets maintained by an inverse energy cascade. When $\Pi$ decreases,
 the jets become even sharper and the flow gradually transits into a  ``quasi-linear'' regime at
@@ -392,7 +391,7 @@ of 511 (1024$^{2}$ equivalent horizontal gridpoints), and a leap-frog
 method with a weak Robert filter for time stepping \citep{Patterson1971}.
 More details on the model are described in \citet{Smith2002}.
 
-If we ignore the dependency on the details of the random forcing, other than the forcing scale 
+If we ignore the dependency on the details of the random forcing other than the forcing scale 
 %($\delta k_f$, decorrelation time scale, etc.)
 (an assumption that we will return to later), Eq. (\ref{eq:barotropic_vorticity_eq})
 is fully characterized by 4 nondimensional
@@ -732,14 +731,15 @@ In the ZKE budget, energy transfer into jets $T_{EM}^{m}$ peaks
 sharply at wavenumber 4, which coincides with the number of jets. The
 EKE and ZKE spectra together show a nonlocal transfer of energy from
 eddies over a wide range of scales directly into jets at the largest scale.
-For $\Pi=0.6$, the EKE budget looks widely different.% Energy is directly
-%transfered from eddies into the mean flow at the forcing scale. %Although
-%eddies larger than the forcing scale have a higher energy level (Fig.
-%\ref{E_EKE_ZKE_spectrum_drag8e-4}), their energy transfer into the
-%jets is negligible compared with that by eddies at the forcing scale.
+For $\Pi=0.6$, the EKE budget looks widely different.
 Eddy-mean flow interactions directly remove eddy energy at the forcing scale and   
 channel it into the zonal jets, where is eventually dissipated by friction
-at the jet scale (Fig. \ref{EKE_ZKE_spectral_budget_drag8e-4} bottom). 
+at the jet scale (Fig. \ref{EKE_ZKE_spectral_budget_drag8e-4} bottom).
+The spectral enstrophy budget shows a similar picture as the 
+spectral energy budget, that eddy/mean-flow interactions dominate 
+downscale enstrophy transfer in the regime $\Pi\apprle 1$.
+For the runs with $Z=3.2$, the above discussion remains largely the
+same.
 
 %As the enstrophy spectrum is related to the energy spectrum by
 %\begin{equation}
@@ -775,14 +775,14 @@ eddy kinetic energy is transfered into the jet \citep{Kraichnan1976}.
 At $t=1.56$, the whole eddy smears into the jet and eventually
 gets destroyed by hyperviscosity, although almost no energy is dissipated
 by hyperviscosity. This picture closely resembles the vortex thinning
-mechanism discussed by \citet{Manz2009}. \textbf{In this physical space picture,
+mechanism discussed by \citet{Manz2009}. In this picture,
 the role of the $\beta$-effect is only implicit as jets with strong shear
-cannot spontaneously form without $\beta$-effect. In the
-spectral space, the roles of both $\beta$-effect and jet shear are explicit: 
-wave/mean-flow interaction that arises from $\beta$-effect transfers 
-energy into jets, and \citet{Gurcan2012} shows that the shear further 
-weakens the already weak wave-wave interactions, thus making energy 
-transfer into jets even more favored.} \textit{I think we should talk about this.}
+cannot spontaneously form without $\beta$-effect. A more complete 
+picture is that the $\beta$-effect is playing the fundamental role in 
+directing the energy cascade into the jets, as mentioned in the
+introduction, while the shear further weakens the already 
+weak wave-wave interactions, thus making energy transfer into 
+jets even more favored \citep{Gurcan2012}.
 
 We conclude that for relatively large zonostrophic index $Z\apprge2.5$,
 a new regime exists for $\Pi\apprle1$, which is different from the
@@ -791,7 +791,8 @@ interactions dominate the energy and enstrophy transfers, whereas eddy-eddy
 interactions are negligible. Therefore, we expect the statistical
 properties of the flow in this regime to be well captured by a ``quasi-linear''
 model, in which eddy-eddy interactions are removed but eddy/mean-flow
-interactions are retained \citep{O'Gorman2007,Tobias2013}. We confirmed this 
+interactions are retained \citep{O'Gorman2007,Farrell2007,Srinivasan2012,Tobias2013}. 
+We confirmed this 
 with a series of quasi-linear simulations with $Z=3.2$, and varying $\Pi$
 from about 0.5 to 8 (not shown). When $\Pi=0.5$ the jets in the
 quasi-linear model have similar scale as in the full nonlinear
@@ -799,9 +800,7 @@ model. When $\Pi$ increases, the jet scale changes little in the
 full nonlinear model but keeps decreasing in the quasi-linear model.
 At sufficiently large $\Pi$, no clear jet is seen in the quasi-linear
 model. Therefore, we will refer to the regime $\Pi\apprle1$ and $Z\apprge2.5$
-as ``quasi-linear'' turbulence. \textit{Why $Z\apprge2.5$? It seems like quasi-linearity
-should only require small PI, no? Also: we should probably discuss Srinivasan and Young 2012
-somewhere here.}
+as ``quasi-linear'' turbulence.
 
 
 \subsection*{c. Potential vorticity staircase ($Z\apprge7.3$)}
@@ -820,17 +819,13 @@ region with well mixed PV. Instead, in most regions away from
 the jet center where the PV jump occurs, the PV gradient is similar to the
 planetary vorticity gradient $\beta$. At such a high zonostrophic index, 
 jets are very strong in all three runs. Still, jets are even sharper 
-in the smallest $\Pi=0.4$ run.  %If we assume the existence
-%of a universal $k^{-5}$ ZKE spectrum for large $Z$
-%and $\Pi\apprge 4$, we may conclude that the PV staircase only forms 
-%when $\Pi\apprle4$. However, such a $k^{-5}$ spectrum is not clear
-%in any of our simulations. 
-In summary, our results suggest that a PV staircase 
+in the smallest $\Pi=0.4$ run. In summary, our results suggest that a PV staircase 
 is most likely to form for large $Z$ and $\Pi\apprle1$,
 although we cannot rule out that it could also form for large $\Pi$ and
 even larger $Z$, which would, however, contradict the prediction of the 
-Zonostrophic KE spectrum (\ref{eq:zonostrophic_spectrum}). Unfortunately,
-the limit of large $\Pi$ and very large $Z$  is virtually impossible to simulate numerically due to inhibitive computational cost.
+zonostrophic KE spectrum (\ref{eq:zonostrophic_spectrum}). Unfortunately,
+the limit of large $\Pi$ and very large $Z$  is virtually impossible to 
+simulate numerically due to inhibitive computational cost.
 
 
 \section{Discussion and conclusion}
@@ -909,6 +904,8 @@ Orthogonalizing the influence of the two parameters, with the regime chart
 in mind, may be a promising route to better understand the two-layer QG
 system, which in turn provides an important stepping stone towards an
 improved theory of the general circulation of Earth's atmosphere and oceans.
+
+\section*{Acknowledgements}
 
 We thank Isaac Held for helpful comments and discussions. We also thank
 Shafer Smith, Antoine Venaille and Geoffrey Vallis for providing the 
